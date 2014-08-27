@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en" ng-app="angularapp">
 <head>
-
     <meta charset="utf-8" />
     <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +12,12 @@
     <meta name="MobileOptimized" content="320" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/vendor.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css">
+
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/app.js"></script>
 
     <script>
     (function($) {
@@ -26,6 +27,7 @@
 
             var $window = $(window),
                 $image = $('.teaserimage-image');
+
             $window.on('scroll', function() {
                 var top = $window.scrollTop();
 
@@ -44,86 +46,7 @@
     </script>
 </head>
 
-<body class="home-template">
-
-    <a href="#" class="logo-readium">
-        <span class="logo"></span>    
-    </a>
-
-    <div class="teaserimage">
-        <div class="teaserimage-image" style="background-image: url(http://images.apple.com/v/home/bc/images/yaoband_hero_2x.jpg)">
-            Teaser Image
-        </div>
-    </div>
-
-    <header class="blog-header">
-        <a class="blog-logo" href="#">Quang Pham</a>
-        <h1 class="blog-title">Quang Pham</h1>
-        <h2 class="blog-description">Some thing over here.</h2>
-        <div class="custom-links">
-            <a href="#">About me</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-            <a href="#">Something</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-            <a href="#">Something</a>
-        </div>
-    </header>
-
-
-    <main class="content" role="main">
-
-        <h5 class="index-headline featured">
-            <span>Featured</span>
-        </h5>
-
-        <div class="container featured">
-
-            <article class="post tag-ebook tag-amazon tag-bevor-es-zu-spat-ist tag-ebook-2 tag-self-publishing featured" role="article">
-                <div class="article-item">
-                    <header class="post-header">
-                        <h2 class="post-title" itemprop="name"><a href="#" itemprop="url">Lorem Ipsum is simpl</a>
-                        </h2>
-                    </header>
-                    <section class="post-excerpt" itemprop="description">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a typ</p>
-                    </section>
-                    <div class="post-meta">
-                        <time datetime="2014-08-17">17 Aug 2014</time>
-                        <span class="post-tags-set">on <a href="#">ebook</a>, <a href="#">Amazon</a>
-                        </span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="post tag-ebook tag-amazon tag-bevor-es-zu-spat-ist tag-ebook-2 tag-self-publishing featured" role="article">
-                <div class="article-item">
-                    <header class="post-header">
-                        <h2 class="post-title" itemprop="name"><a href="#" itemprop="url">Lorem Ipsum is simpl</a>
-                        </h2>
-                    </header>
-                    <section class="post-excerpt" itemprop="description">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a typ</p>
-                    </section>
-                    <div class="post-meta">
-                        <time datetime="2014-08-17">17 Aug 2014</time>
-                        <span class="post-tags-set">on <a href="#">ebook</a>, <a href="#">Amazon</a>
-                        </span>
-                    </div>
-                </div>
-            </article>
-
-
-        </div>
-
-        <nav class="pagination" role="navigation">
-            <span class="page-number">Page 1 of 6</span>&nbsp;&nbsp;·&nbsp;&nbsp;<a class="older-posts" href="#">Older</a>
-        </nav>
-
-    </main>
-
-    <footer class="site-footer">
-        <div class="inner">
-            <section class="copyright">All content copyright <a href="#">Quang Pham</a> &copy; 2014 &bull; All rights reserved.</section>
-        </div>
-    </footer>
+<body class="home-template" ui-view>
 
 </body>
 
