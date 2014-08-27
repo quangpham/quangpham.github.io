@@ -24,18 +24,9 @@
 
         $(document).ready(function() {
 
-            $('.post-content').each(function() {
-                var $this = $(this),
-                    img = $this.find('img:first'),
-                    url = img.attr('src');
-
-                $(".post-image-image").css('background-image', 'url(' + url + ')');
-
-                img.remove();
-            });
-
             var $window = $(window),
                 $image = $('.post-image-image');
+            
             $window.on('scroll', function() {
                 var top = $window.scrollTop();
 
@@ -50,22 +41,6 @@
 
             var height = $('.article-image').height();
             $('.post-content').css('padding-top', height + 'px');
-
-            $(function() {
-                $('a[href*=#]:not([href=#])').click(function() {
-                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        if (target.length) {
-                            $('html,body').animate({
-                                scrollTop: target.offset().top
-                            }, 500);
-                            return false;
-                        }
-                    }
-                });
-            });
-
         });
 
     }(jQuery));
@@ -82,7 +57,7 @@
 
         <article class="post tag-sprachkritik tag-texte tag-articleimage tag-satire featured">
             <div class="article-image">
-                <div class="post-image-image"></div>
+                <div class="post-image-image" style="background-image: url(http://images.apple.com/v/home/bc/images/yaoband_hero_2x.jpg)"></div>
                 <div class="post-meta">
                     <h1 class="post-title">Lorem Ipsum is simply dummy</h1>
                     <div class="cf post-meta-text">
@@ -99,11 +74,7 @@
 
             <section class="post-content">
                 <a name="topofpage"></a>
-                <p>
-                    <img src="http://images.apple.com/v/home/bc/images/yaoband_hero_2x.jpg" alt="Klar und deutlich" />
-                    <em>Lorem Ipsum is simply dummy</em>
-                </p>
-                <hr />
+                <p><em>Lorem Ipsum is simply dummy</em></p>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </section>
         </article>
