@@ -18,12 +18,11 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "//formspree.io/me@quangpham.com",
                 type: "POST",
                 data: {
                     name: name,
-                    phone: phone,
-                    email: email,
+                    _replyto: email,
                     message: message
                 },
                 cache: false,
