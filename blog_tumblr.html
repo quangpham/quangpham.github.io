@@ -153,10 +153,12 @@
             {block:Pagination}
             <div class="pagination-container text-center">
                 <ul class="pagination">
-                    {block:PreviousPage}
-                    <li><a href="{PreviousPage}">«</a></li>
-                    {/block:PreviousPage} 
                     
+                    <li class="disable"></li>
+                    {block:PreviousPage}
+                    <li ><a href="{PreviousPage}">«</a></li>
+                    {/block:PreviousPage}
+
                     {block:JumpPagination length="5"} 
                     
                     {block:CurrentPage}
@@ -167,10 +169,13 @@
                     {/block:JumpPage} 
 
                     {/block:JumpPagination} 
-                    
+
                     {block:NextPage}
                     <li><a href="{NextPage}">»</a></li>
                     {/block:NextPage}
+                    
+                    <li class="disable"></li>
+                    
                 </ul>
                 <!--//pagination-->
             </div>
