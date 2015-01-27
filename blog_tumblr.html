@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Quang Pham's Blog</title>
+    <title>{Title}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="http://quangpham.com/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -86,7 +86,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    
+
                     <li>
                         <a href="http://quangpham.com/#about">About</a>
                     </li>
@@ -115,13 +115,11 @@
 
     <section id="blog-list" class="blog-list section">
         <div class="container">
-            {block:Posts}
-            {block:Text}
+            {block:Posts} {block:Text}
             <article class="item">
                 <div class="row">
                     {block:Title}
-                    <h3 class="post-title col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0"><a href="{Permalink}">{Title}</a></h3>
-                    {/block:Title}
+                    <h3 class="post-title col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0"><a href="{Permalink}">{Title}</a></h3> {/block:Title}
                     <div class="clearfix"></div>
                     <div class="meta col-md-2 col-sm-3 col-xs-12 text-right">
                         <ul class="meta-list list-unstyled">
@@ -148,12 +146,39 @@
                 </div>
                 <!--//row-->
             </article>
-            {/block:Text}
-            {/block:Posts}
+            {/block:Text} {/block:Posts}
             <!--//item-->
+
+
+            {block:Pagination}
+            <div class="pagination-container text-center">
+                <ul class="pagination">
+                    {block:PreviousPage}
+                    <li><a href="{PreviousPage}">«</a></li>
+                    {/block:PreviousPage} 
+                    
+                    {block:JumpPagination length="5"} 
+                    
+                    {block:CurrentPage}
+                    <li class="active"><a href="{URL}">{PageNumber}<span class="sr-only">(current)</span></a></li>{/block:CurrentPage} 
+                    
+                    {block:JumpPage}
+                    <li><a href="{URL}">{PageNumber}</a></li>
+                    {/block:JumpPage} 
+
+                    {/block:JumpPagination} 
+                    
+                    {block:NextPage}
+                    <li><a href="{NextPage}">»</a></li>
+                    {/block:NextPage}
+                </ul>
+                <!--//pagination-->
+            </div>
+            {/block:Pagination}
         </div>
         <!--//container-->
     </section>
+
 
 
     <footer class="footer" style="background-image: url('http://quangpham.com/assets/img/bg-footer.jpg')">
