@@ -40,19 +40,9 @@
     <link href="http://quangpham.com/assets/css/plugins/animate.css" rel="stylesheet" type="text/css">
 
     <!-- Vitality Theme CSS -->
-    <!-- Uncomment the color scheme you want to use. -->
-    <!-- <link href="http://quangpham.com/assets/css/vitality-red.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="http://quangpham.com/assets/css/vitality-aqua.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="http://quangpham.com/assets/css/vitality-blue.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="http://quangpham.com/assets/css/vitality-green.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="http://quangpham.com/assets/css/vitality-orange.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="http://quangpham.com/assets/css/vitality-pink.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="http://quangpham.com/assets/css/vitality-purple.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="http://quangpham.com/assets/css/vitality-tan.css" rel="stylesheet" type="text/css"> -->
+
     <link href="http://quangpham.com/assets/css/vitality-turquoise.css" rel="stylesheet" type="text/css">
     <link href="http://quangpham.com/assets/css/blog.css" rel="stylesheet" type="text/css">
-    <!-- <link href="http://quangpham.com/assets/css/vitality-yellow.css" rel="stylesheet" type="text/css"> -->
-
     <!-- IE8 support for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -115,11 +105,13 @@
 
     <section id="blog-list" class="blog-list section">
         <div class="container">
-            {block:Posts} {block:Text}
+            {block:Posts} 
+            {block:Text}
             <article class="item">
                 <div class="row">
                     {block:Title}
-                    <h3 class="post-title col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0"><a href="{Permalink}">{Title}</a></h3> {/block:Title}
+                    <h3 class="post-title col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0"><a href="{Permalink}">{Title}</a></h3> 
+                    {/block:Title}
                     <div class="clearfix"></div>
                     <div class="meta col-md-2 col-sm-3 col-xs-12 text-right">
                         <ul class="meta-list list-unstyled">
@@ -146,7 +138,8 @@
                 </div>
                 <!--//row-->
             </article>
-            {/block:Text} {/block:Posts}
+            {/block:Text} 
+            {/block:Posts}
             <!--//item-->
 
 
