@@ -69,7 +69,7 @@ $(".testimonials-carousel").owlCarousel({
 });
 
 $(".portfolio-gallery").owlCarousel({
-    items: 3,
+    items: 5,
 });
 
 // Magnific Popup jQuery Lightbox Gallery Settings
