@@ -514,6 +514,15 @@ aside.cta-quote span.quote {
     padding: 30px;
 }
 
+.technology-stack .about-content {
+    text-align: left;
+}
+
+.technology-stack .about-content ul {
+    padding: 0;
+    list-style: inside;
+}
+
 .about-carousel .item {
     padding: 15px;
 }
