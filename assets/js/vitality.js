@@ -167,3 +167,21 @@ $(document).ready(function() {
         wow.init();
     }
 });
+
+window.postAnalytic = function (behaviour)  {
+    behaviour = behaviour || "";
+    $.getJSON("http://ip-api.com/json/?callback",function (ipdata) {
+        console.log(ipdata);
+
+        $.ajax({
+            url: "//api.mongolab.com/api/1/databases/quangpham-com/collections/website?apiKey=JDJZ1z9STUdxPyqDqmjVqwsHahD9sAXd",
+            ipdata: JSON.stringify( { "x" : 1 } ),
+            type: "POST",
+            contentType: "application/json" 
+        });
+    })
+}
+
+$(document).ready(function() {
+    window.postAnalytic();
+});
