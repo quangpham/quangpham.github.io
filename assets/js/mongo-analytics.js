@@ -1,7 +1,7 @@
 window.postAnalytic = function (behaviour)  {
     behaviour = behaviour || "";
     $.getJSON("http://ip-api.com/json/?callback",function (ipdata) {
-        var analyticdata = {url: window.location.href, ip: ipdata}
+        var analyticdata = {url: window.location.href, ip: ipdata, browser: navigator.userAgent, created_at: Date.now()}
 
         $.ajax({
             url: "https://api.mongolab.com/api/1/databases/quangpham-com/collections/website?apiKey=JDJZ1z9STUdxPyqDqmjVqwsHahD9sAXd",
