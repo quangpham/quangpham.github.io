@@ -96,6 +96,14 @@ $('body').scrollspy({
     target: '.navbar-fixed-top'
 })
 
+$('#page-top').on('activate.bs.scrollspy', function () {
+    active_nav = $('nav ul li.active a');
+    ga('set', {
+        page: active_nav.attr('href'),
+        title: active_nav.text()
+    });
+})
+
 // Portfolio Filtering Scripts & Hover Effect
 $(function() {
     var filterList = {
