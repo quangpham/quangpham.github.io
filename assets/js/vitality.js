@@ -98,11 +98,12 @@ $('body').scrollspy({
 
 $('#page-top').on('activate.bs.scrollspy', function () {
     active_nav = $('nav ul li.active a');
-    ga('set', {
-        page: active_nav.attr('href'),
-        title: active_nav.text()
-    });
-    console.log(active_nav.attr('href'));
+    // ga('set', {
+    //     page: active_nav.attr('href'),
+    //     title: active_nav.text()
+    // });
+    ga('send', 'pageview', '/' + active_nav.attr('href'));
+    console.log('/' + active_nav.attr('href'));
 })
 
 // Portfolio Filtering Scripts & Hover Effect
