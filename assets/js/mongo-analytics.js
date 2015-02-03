@@ -11,12 +11,12 @@ var guid = (function() {
 
 
 window.sendDataToMongolab = function(dbcollection, data) {
-    if (typeof $.cookie('qpa_ipdata') === 'undefined') {
-        $.getJSON("http://ip-api.com/json/?callback",function (ipdata) {
-            $.cookie('qpa_ipdata', JSON.stringify(ipdata), { expires: 1 });
-        }
-        return;
-    }
+    // if (typeof $.cookie('qpa_ipdata') === 'undefined') {
+    //     $.getJSON("http://ip-api.com/json/?callback",function (ipdata) {
+    //         $.cookie('qpa_ipdata', JSON.stringify(ipdata), { expires: 1 });
+    //     }
+    //     return;
+    // }
     
     data.ip = JSON.parse($.cookie('qpa_ipdata'));
     // if (data.ip.query == "88.195.149.153") { return; }
