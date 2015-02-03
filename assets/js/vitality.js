@@ -57,7 +57,7 @@ $(".portfolio-carousel").owlCarousel({
 });
 
 $(".testimonials-carousel").owlCarousel({
-    autoPlay : 5000,
+    autoPlay : 10000,
     singleItem: true,
     navigation: true,
     pagination: true,
