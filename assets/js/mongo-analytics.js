@@ -1,6 +1,10 @@
 window.postAnalytic = function (behaviour)  {
     behaviour = behaviour || "";
     $.getJSON("http://ip-api.com/json/?callback",function (ipdata) {
+
+        if (ipdata.query == "88.195.149.153") {
+            return;
+        }
         var analyticdata = {url: window.location.href, ip: ipdata, browser: navigator.userAgent, created_at: Date.now()}
 
         $.ajax({
