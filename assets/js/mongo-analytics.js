@@ -18,9 +18,9 @@ window.postAnalytic = function() {
     // behaviour = behaviour || "";
     $.getJSON("http://ip-api.com/json/?callback",function (ipdata) {
 
-        // if (ipdata.query == "88.195.149.153") {
-        //     return;
-        // }
+        if (ipdata.query == "88.195.149.153") {
+            return;
+        }
 
         window.sendDataToMongolab("website", {url: window.location.href, ip: ipdata} );
     })
