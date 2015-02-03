@@ -103,7 +103,6 @@ $('#page-top').on('activate.bs.scrollspy', function () {
     //     title: active_nav.text()
     // });
     ga('send', 'pageview', '/' + active_nav.attr('href'));
-    console.log('/' + active_nav.attr('href'));
 })
 
 // Portfolio Filtering Scripts & Hover Effect
