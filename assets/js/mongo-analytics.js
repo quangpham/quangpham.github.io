@@ -1,4 +1,4 @@
-windows.sendDataToMongolab = function(dbcollection, data) {
+window.sendDataToMongolab = function(dbcollection, data) {
     var created_time = new Date();
     data.browser = navigator.userAgent;
     data.created_at = created_time.toString();
