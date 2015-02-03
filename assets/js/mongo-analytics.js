@@ -22,12 +22,7 @@ window.postAnalytic = function() {
         //     return;
         // }
 
-        var analyticdata = {
-            url: window.location.href, 
-            ip: ipdata
-        }
-
-        windows.sendDataToMongolab("website", analyticdata);
+        window.sendDataToMongolab("website", {url: window.location.href, ip: ipdata} );
     })
 }
 
