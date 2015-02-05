@@ -1,70 +1,25 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="en-us">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-  <link rel="stylesheet" href="assets/css/vendor.css" type="text/css">
-  <link rel="stylesheet" href="assets/css/app.css" type="text/css">
+    <meta charset="utf-8">
+    <!--[if IE 8]><link rel='stylesheet' media='screen' href='http://www.responsinator.com/css/ie8.css?v=201403261325' type='text/css' /><![endif]-->
+    <link rel="stylesheet" media="screen" href="http://www.responsinator.com/css/main.css?v=9">
 </head>
 
-<body ng-app="sayduckapp" class="sayduck-app">
-
-  <ion-side-menus>
-
-    <!-- Center content -->
-    <ion-side-menu-content drag-content="false">
-      <ion-nav-view animation=""></ion-nav-view>
-    </ion-side-menu-content>
-
-    <!-- Left menu -->
-    <ion-side-menu side="left" class="side-menu-left">
-      <ion-content has-header="false" scroll="false">
-        <ion-list>
-          <li class="item" ng-click="$$goToState('home')">
-            <div class="row row-center">
-              <div class="col text">Home</div>
+<body>
+    <section id='devices'>
+        <div class='deviceWrap iphone-5-portrait'>
+            <div class='device' style='width: 320px;height: 568px;padding-top: 00px;padding-bottom: 0px;'>
+                <div class='flashingTop' style='height: 0px; width: 320px'><span class='time'></span>
+                </div>
+                <div class='flashingBottom' style='height: 0px'></div>
+                <iframe src='http://quangpham.com/projects/sayduckapp/index.html#/online/home' id='iphone-5-portrait'></iframe>
             </div>
-          </li>
-          <li class="item" ng-click="$$goToState('menu', {'menuId':'root'})">
-            <div class="row row-center">
-              <div class="col text">Browse</div>
-            </div>
-          </li>
-<!--           <li class="item" ng-click="$$goToState('menu', {'menuId':'root'})">
-            <div class="row row-center">
-              <div class="col text">Menu</div>
-            </div>
-          </li>
-          <li class="item" ng-click="$$goToState('product', {'productID':1})">
-            <div class="row row-center">
-              <div class="col text">Product</div>
-            </div>
-          </li> -->
-          <li class="item" ng-click="$$goToState('feedback')">
-            <div class="row row-center">
-              <div class="col text">Feedback</div>
-            </div>
-          </li>
-          <li class="item" ng-click="$$goToState('help')">
-            <div class="row row-center">
-              <div class="col text">Help</div>
-            </div>
-          </li>
-        </ion-list>
-      </ion-content>
-    </ion-side-menu>
 
-    <!-- Right menu -->
-    <ion-side-menu side="right">
-    </ion-side-menu>
-
-  </ion-side-menus>
-
-
-  <script src="assets/js/vendor.js"></script>
-  <script src="assets/js/app.js"></script>
-
+        </div>
+    </section>
 </body>
 
 </html>
