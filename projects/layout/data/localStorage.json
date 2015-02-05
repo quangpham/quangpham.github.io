@@ -1,0 +1,8 @@
+{
+    "histories": [{
+      "name": "app.home",
+      "params": {
+        "mode": "app"
+      }
+    }]
+  }

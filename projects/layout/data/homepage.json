@@ -1,0 +1,114 @@
+{
+    "rows": [{
+      "cols": [{
+        "action": {
+          "type": "ar"
+        },
+        "width": 100,
+        "image": "media/sayduck/home/tap_to_scan.jpg"
+      }],
+      "height": 75
+    }, {
+      "cols": [{
+        "action": {
+          "menuId": "L1Serralunga",
+          "type": "menu"
+        },
+        "width": 50,
+        "image": "media/sayduck/home/browse_serralunga.jpg"
+      }, {
+        "width": 50,
+        "rows": [{
+          "cols": [{
+            "action": {
+              "menuId": "L1Alessi",
+              "type": "menu"
+            },
+            "width": 100,
+            "image": "media/sayduck/home/browse_alessi.jpg"
+          }],
+          "height": 50
+        }, {
+          "cols": [{
+            "action": {
+              "menuId": "L1VitraUK",
+              "type": "menu"
+            },
+            "width": 100,
+            "image": "media/sayduck/home/browse_vitra.jpg"
+          }],
+          "height": 50
+        }]
+      }],
+      "height": 100
+    }, {
+      "cols": [{
+        "action": {
+          "menuId": "L1BBItalia",
+          "type": "menu"
+        },
+        "width": 100,
+        "image": "media/sayduck/home/browse_bbitalia.jpg"
+      }],
+      "height": 20
+    }, {
+      "cols": [{
+        "width": 50,
+        "rows": [{
+          "cols": [{
+            "action": {
+              "menuId": "L1Artemide",
+              "type": "menu"
+            },
+            "width": 100,
+            "image": "media/sayduck/home/browse_artemide.jpg"
+          }],
+          "height": 50
+        }, {
+          "cols": [{
+            "action": {
+              "menuId": "L1HermanMiller",
+              "type": "menu"
+            },
+            "width": 100,
+            "image": "media/sayduck/home/browse_hermanmiller.jpg"
+          }],
+          "height": 50
+        }]
+      }, {
+        "width": 50,
+        "rows": [{
+          "cols": [{
+            "action": {
+              "menuId": "L1Kartell",
+              "type": "menu"
+            },
+            "width": 100,
+            "image": "media/sayduck/home/browse_kartell.jpg"
+          }],
+          "height": 50
+        }, {
+          "cols": [{
+            "action": {
+              "menuId": "L1Knoll",
+              "type": "menu"
+            },
+            "width": 100,
+            "image": "media/sayduck/home/browse_knoll.jpg"
+          }],
+          "height": 50
+        }]
+      }],
+      "height": 100
+    }, {
+      "cols": [{
+        "action": {
+          "menuId": "root",
+          "type": "menu"
+        },
+        "width": 100,
+        "image": "media/sayduck/home/browse_all_brands.jpg"
+      }],
+      "height": 20
+    }]
+  }

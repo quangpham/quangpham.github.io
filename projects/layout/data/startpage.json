@@ -1,0 +1,10 @@
+{
+    "backgroundUrl": "media/sayduck/3.0/startpage/bg.jpg",
+    "slides": [{
+      "image": "media/sayduck/3.0/startpage/slide_1.png"
+    }, {
+      "image": "media/sayduck/3.0/startpage/slide_2.png"
+    }, {
+      "image": "media/sayduck/3.0/startpage/slide_3.png"
+    }]
+  }
