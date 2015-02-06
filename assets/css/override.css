@@ -1,0 +1,12 @@
+.portfolio-modal {
+	background: #fff;
+}
+
+.portfolio-modal .modal-content {
+	color: black;
+}
+
+.portfolio-modal .modal-content .close-modal .lr,
+.portfolio-modal .modal-content .close-modal .rl {
+	background-color:black
+}
