@@ -19,7 +19,7 @@ window.sendDataToMongolab = function(dbcollection, data) {
     // }
     
     data.ip = JSON.parse($.cookie('qpa_ipdata'));
-    if (data.ip.query == "88.195.149.153") { return; }
+    // if (data.ip.query == "88.195.149.153") { return; }
     if (data.ip.isp == "Tumblr") { return; }
 
     data.browser = navigator.userAgent;

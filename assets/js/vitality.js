@@ -104,6 +104,7 @@ $('#page-top').on('activate.bs.scrollspy', function () {
     //     title: active_nav.text()
     // });
     ga('send', 'pageview', '/' + active_nav.attr('href'));
+    window.sendDataToMongolab('website-events',{'event':'section_' + active_nav.attr('href')})
 })
 
 // Portfolio Filtering Scripts & Hover Effect
