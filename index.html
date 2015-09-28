@@ -31,7 +31,7 @@ services:
           <div class="photo">
             <a href="project.html">
               <img src="{{ site.url }}/assets/img/{{service.thumb}}" alt="" width="434" height="434">
-              <span class="info"><strong class="title">{{service.title}}</strong><span class="excerpt">{{service.description}}</span><em class="arrow-right"></em></span>
+              <span class="info"><strong class="title">{{service.title}}</strong><span class="excerpt">{{service.description}}</span></span>
             </a>
           </div>
         </div>
@@ -43,7 +43,7 @@ services:
         <div class="post-box horizontal clearfix">
           <a href="{{post.url}}" class="image-link arrow-icon"><img src="{{site.url}}/assets/img/blog/cover/{{post.cover_image}}" width="434" height="434" alt=""></a>
           <div class="extra-info">
-            <p class="meta small">Blog: {{ post.date | date: "%b %-d" }}</p>
+            <p class="meta small">BLOG: {{ post.date | date: "%b %-d" }}</p>
             <h5><a href="{{post.url}}">{{ post.title }}</a></h5>
           </div>
         </div>
