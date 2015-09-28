@@ -1,0 +1,117 @@
+---
+layout: default
+title: Portfolio
+container_class: white-background
+portfolios:
+- title: Hauser Mobile
+  description: Great tool for residents communication
+  thumb: hauser2.jpg
+- title: Sayduck
+  description: Sayduck app is using 3D technology to help you buying furniture
+  thumb: sayduck.jpg
+- title: Introdex
+  description: Introdex is an interactive business card application
+  thumb: introdex3.jpg
+- title: Freedom
+  description: Sayduck app is using 3D technology to help you buying furniture
+  thumb: freedom.jpg
+- title: Boardbar
+  description: Sayduck app is using 3D technology to help you buying furniture
+  thumb: boardbar.jpg
+- title: Domayne
+  description: Sayduck app is using 3D technology to help you buying furniture
+  thumb: domayne.jpg
+- title: Piano chord finder
+  description: Piano chord finder is Symbian & Meego app that helps you to find piano chord
+  thumb: piano-chord.jpg
+- title: Where 2 eat
+  description: Where2eat is a Symbian & Meego app that helps you to find best-place-to-eat
+  thumb: where-2-eat2.jpg
+- title: meego.com
+  description: Website development with Drupal
+  thumb: meego.jpg
+- title: Anu Koivunen
+  description: Simple business website hosted on github
+  thumb: anukoivunen.jpg
+- title: Outi Trast
+  description: Simple business website hosted on github
+  thumb: outi.jpg
+testimonials:
+- title: Mikko Martikainen - CEO, Founder of Sayduck
+  description: Quang has an excellent capacity to quickly learn new technologies, and he has always been very proactive in coming up with solutions to difficult problems
+- title: Pasi Lindholm - CEO, Partner, Introdex Oy
+  description: Quang is a very skilled and motivated software professional, who can independently develop demanding mobile phone applications and HTML/JavaScript - based services
+- title: Outi Trast - CEO, Lakiasiaintoimisto Trast Oy
+  description: Quang delivered an elegant website as a "turn-key" package and also helped me to set-up website domains, hosting and email. I can warmly recommend him for other entrepreneurs
+- title: Anu Koivunen - FM (ruotsin kääntäminen ja tulkkaus, Helsingin yliopisto)
+  description: Quang on osaava asiantuntija, joka kuuntelee asiakkaansa toivomuksia, ottaa vastaan palautetta ja varmistaa, että kaikki toimii niin kuin pitääkin. Suosittelen lämpimästi!
+companies:
+- logo: mirum.png
+- logo: introdex.png
+- logo: sayduck.png
+- logo: tds.png
+- logo: wri.png
+- logo: anukoivunen-com.png
+- logo: trast-fi.png
+---
+
+<div class="container container-masonry">
+	<div class="inner">
+		<div class="row">
+<!-- 			<div class="box col-sm-4 col-md-6">
+				<div class="thumb featured">
+					<div class="photo">
+						<a href="project.html">
+							<img src="img/portfolio/hauser2.jpg" alt="" width="715" height="715">
+							<span class="info"><strong class="title">Hauser Mobile</strong><span class="excerpt">Great tool for residents communication</span><em class="arrow-right"></em></span>
+						</a>
+					</div>
+				</div>
+			</div> -->
+			{% for portfolio in page.portfolios %}
+			<div class="box col-xs-6 col-sm-4 col-md-3">
+				<div class="thumb">
+					<div class="photo">
+						<a href="#">
+							<img src="{{ site.url }}/assets/img/portfolio/{{portfolio.thumb}}" alt="" width="434" height="434">
+							<span class="info"><strong class="title">{{portfolio.title}}</strong><span class="excerpt">{{portfolio.description}}</span><em class="arrow-right"></em></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	<div class="margin-5"></div>
+	<h4>Companies I worked with</h4>
+	<div class="owl-carousel owl-clients owl-round-arrows">
+		{% for company in page.companies %}
+		<div class="client-column">
+			<img src="{{ site.url }}/assets/img/companies/{{company.logo}}" width="560" height="150" alt="">
+		</div>
+		{% endfor %}
+	</div>
+	<div class="margin-2"></div>
+
+	<div class="margin-5"></div>
+	<div class="row">
+		<div class="col-sm-6">
+			<h4>What people say about me</h4>
+		</div>
+		<div class="col-sm-6">
+			<div class="red-border testimonials-vertical-offset">
+				<div class="owl-carousel owl-testimonials2 owl-red-dots">
+					{% for testimonial in page.testimonials %}
+					<div class="testimonial-item">
+						<p>{{testimonial.description}}</p>
+						<em class="name">{{testimonial.title}}</em>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="margin-3"></div>
+		</div>
+	</div>
+
+</div>

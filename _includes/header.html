@@ -1,0 +1,28 @@
+<header id="top" class="navbar" role="banner">
+  <div class="container">
+    <div class="inner">
+
+      <div class="site-title">
+        <h1><a href="index.html"><h3>Quang Pham</h3></a></h1>
+        <a href="#site-menu" class="site-menu-toggle">
+          <span class="sr-only">Toggle navigation</span>
+          <em class="first"></em><em class="middle"></em><em class="last"></em>
+        </a>
+      </div>
+
+      <div id="site-menu">
+        <nav>
+          <ul>
+            {% for nav in site.nav_items %}
+              {% if page.url == nav.url %}
+                <li class="current-menu-parent"><a href="{{ nav.url | prepend: site.baseurl }}">{{ nav.title }}</a></li>
+              {% else %}
+                <li><a href="{{ nav.url | prepend: site.baseurl }}">{{ nav.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

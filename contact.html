@@ -1,0 +1,36 @@
+---
+layout: default
+title: Contact
+container_class: white-background
+---
+
+<div class="container container-boxes">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="box white-bg" style="background-image:url({{ site.url }}/assets/img/sample-inside.png)">
+        <h1>Contact me</h1>
+        <p>I'd love to hear about your next project whether it is an online store, a website for your business, or a simple mobile application. Send me a message or write me an <a href="mailto:contact@quangpham.com">email</a></p>
+        <p>You can also follow me on <a href="https://twitter.com/phamaa" target="_blank">Twitter</a>, <a href="http://fi.linkedin.com/pub/pham-quang/50/316/72" target="_blank">Linkedin</a> and <a href="http://github.com/quangpham" target="_blank">Github</a>
+        </p>
+      </div>
+
+    </div>
+    <div class="col-sm-6">
+      <div class="box white-bg">
+        <h5>Send message</h5>
+        <div class="sep red"></div>
+        <div class="margin-1"></div>
+        <form action="contact1.html" class="no-bottom">
+          <label for="name" class="sr-only">Name</label>
+          <input type="text" class="underline" name="name" id="name" placeholder="Your name..." required>
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" class="underline" name="email" id="email" placeholder="Your email..." required>
+          <label for="message" class="sr-only">Message</label>
+          <textarea class="underline" name="message" id="message" cols="30" rows="6" placeholder="Here goes the message..." required></textarea>
+          <div class="margin-1"></div>
+          <input type="submit" value="Send it">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

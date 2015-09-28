@@ -1,0 +1,80 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="container container-masonry">
+	<div class="inner">
+		<div class="row">
+
+			<div class="col-sm-9">
+				<div class="row">
+					{% for post in paginator.posts %}
+					
+						{% if forloop.index == 1 %}
+						<div class="box col-sm-8">
+							<div class="thumb featured">
+								<div class="photo">
+									<a href="{{post.url}}">
+										<img src="{{site.url}}/assets/img/blog/cover/{{post.cover_image}}" alt="" width="715" height="715">
+										<span class="info"><strong class="big-title">{{ post.title }}</strong><span class="excerpt">{{ post.excerpt }}</span><em class="arrow-right"></em></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						{% endif %}
+
+						{% if forloop.index == 2 or forloop.index == 3 or forloop.index == 9 %}
+						{% if forloop.index == 2 %}
+						<div class="box col-sm-4">
+							<div class="post-box vertical clearfix">
+						{% else %}
+						<div class="box col-sm-8">
+							<div class="post-box horizontal clearfix">
+						{% endif %}
+								<a href="{{post.url}}" class="image-link arrow-icon"><img src="{{site.url}}/assets/img/blog/cover/{{post.cover_image}}" width="434" height="434" alt=""></a>
+								<div class="extra-info">
+									<p class="meta small">{{ post.date | date: "%b %-d, %Y" }}</p>
+									<h5><a href="{{post.url}}">{{ post.title }}</a></h5>
+								</div>
+							</div>
+						</div>
+						{% endif %}
+
+						{% if forloop.index == 4 or forloop.index == 5 or forloop.index == 6 or forloop.index == 7 or forloop.index == 8%}
+						<div class="box col-sm-4">
+							<div class="post-box post-link clearfix">
+								<div class="extra-info">
+									<p class="meta small">{{ post.date | date: "%b %-d, %Y" }}</p>
+									<h5><a href="{{post.url}}">{{ post.title }}</a></h5>
+								</div>
+							</div>
+						</div>
+						{% endif %}
+
+					{% endfor %}
+
+					<div class="clear"></div>
+
+				</div>
+			</div>
+
+			<div class="col-sm-3">
+				<div class="widget">
+					<h6 class="title">Popular posts</h6>
+					<p class="no-bottom">We are a digital agency with 20 plus years of collective experience in the business.</p>
+				</div>
+
+				<div class="widget widget_categories">
+					<h6 class="title">Categories</h6>
+					<ul>
+						<li class="cat-item"><a href="blog.html">Advertising</a></li>
+						<li class="cat-item current-cat"><a href="blog.html">Branding</a></li>
+						<li class="cat-item"><a href="blog.html">Marketing</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>

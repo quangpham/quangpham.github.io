@@ -1,0 +1,24 @@
+# Site settings
+title: Pham's website
+email: me@quangpham.com
+description: "My name is Quang Pham, a fullstack developer in Finland. This is my personal portfolio"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:4000/"
+#url: "http://quangpham.com"
+github_username:  quangpham
+# Build settings
+markdown: kramdown
+resume_url: "http://quangpham.com"
+paginate: 9
+paginate_path: "/blog/page:num/"
+nav_items:
+- title: Home
+  url: /index.html
+- title: About
+  url: /about.html
+- title: Portfolio
+  url: /portfolio.html
+- title: Blog
+  url: /blog/index.html
+- title: Contact
+  url: /contact.html
