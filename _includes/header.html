@@ -14,7 +14,8 @@
         <nav>
           <ul>
             {% for nav in site.nav_items %}
-              {% if page.url == nav.url %}
+            {% capture page_url %}{{ nav.url }}index.html{% endcapture %}
+              {% if page.url == page_url %}
                 <li class="current-menu-parent"><a href="{{ nav.url | prepend: site.baseurl }}">{{ nav.title }}</a></li>
               {% else %}
                 <li><a href="{{ nav.url | prepend: site.baseurl }}">{{ nav.title }}</a></li>
