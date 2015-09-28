@@ -13,12 +13,12 @@ paginate: 9
 paginate_path: "/blog/page:num/"
 nav_items:
 - title: Home
-  url: /index.html
+  url: /
 - title: About
-  url: /about.html
+  url: /about/
 - title: Portfolio
-  url: /portfolio.html
+  url: /portfolio/
 - title: Blog
   url: /blog/
 - title: Contact
-  url: /contact.html
+  url: /contact/
