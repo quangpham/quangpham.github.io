@@ -19,6 +19,6 @@ nav_items:
 - title: Portfolio
   url: /portfolio.html
 - title: Blog
-  url: /blog/index.html
+  url: /blog/
 - title: Contact
   url: /contact.html
