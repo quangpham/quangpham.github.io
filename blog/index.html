@@ -54,6 +54,30 @@ title: Blog
 
 					{% endfor %}
 
+					{% if paginator.total_pages > 1 %}
+					<div class="box col-sm-12 text-center">
+						<div class="margin-2"></div>
+						
+						{% if paginator.previous_page %}
+    				<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button">Prev</a>
+  					{% endif %}
+
+  					{% for page in (1..paginator.total_pages) %}
+	  					{% if page == paginator.page %}
+	  					<a class="button filled">{{ page }}</a>
+	  					{% elsif page == 1 %}
+	  					<a class="button" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+	  					{% else %}
+	  					<a class="button" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+	  					{% endif %}
+  					{% endfor %}
+
+						{% if paginator.next_page %}
+    				<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button">Next</a>
+  					{% endif %}
+					</div>
+					{% endif %}
+
 					<div class="clear"></div>
 
 				</div>
