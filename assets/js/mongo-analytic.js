@@ -7,7 +7,7 @@ var guid = (function() {
                .substring(1);
   }
   return function() {
-    return s4() + s4() + s4();
+    return s4() + "-" +s4() + "-" +s4() + "-" +s4() + "-" +s4() + "-" + (new Date()).getTime().toString();
   };
 })();
 
