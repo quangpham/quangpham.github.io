@@ -9,11 +9,15 @@ var guid = (function() {
   };
 })();
 
-window.sendDataToMongolab = function(dbcollection, data) {   
+window.sendDataToMongolab = function(dbcollection, data) {
+		if (window.location.href.indexOf("http://localhost:4000/") > -1) { return; }
+
+		data.url = window.location.pathname
+    
     data.ip = JSON.parse(Cookies('qpa_ipdata'));
-    data.browser = navigator.userAgent;
-    // if (data.ip.query == "88.195.149.153") { return; }
     if (data.ip.isp == "Tumblr") { return; }
+
+    data.browser = navigator.userAgent;
     if (data.browser == "gosquared-thumbnailer/1.0") { return; }
 
     data.screen_size = $(window).width().toString() + "x" + $(window).height().toString();
@@ -21,10 +25,7 @@ window.sendDataToMongolab = function(dbcollection, data) {
 
     var created_time = new Date();
     data.created_at = created_time.toString();
-    data.timestamp = created_time.getTime();
-
-    console.log(data);
-    
+    data.timestamp = created_time.getTime();    
     
     $.ajax({
         url: "https://api.mongolab.com/api/1/databases/quangpham-com/collections/" + dbcollection + "?apiKey=JDJZ1z9STUdxPyqDqmjVqwsHahD9sAXd",
@@ -44,10 +45,10 @@ window.initializeMongoAnalytic = function(){
     if (typeof Cookies('qpa_ipdata') === 'undefined'){
         $.getJSON("http://ip-api.com/json/?callback",function (ipdata) {
             Cookies.set('qpa_ipdata', JSON.stringify(ipdata), { expires: 1 });
-            window.sendDataToMongolab("website", {url: window.location.href} );
+            window.sendDataToMongolab("website", {} );
         });
     } else {
-        window.sendDataToMongolab("website", {url: window.location.href} );
+        window.sendDataToMongolab("website", {} );
     }
 
 }
