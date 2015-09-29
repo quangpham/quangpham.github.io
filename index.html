@@ -1,13 +1,22 @@
 ---
 layout: default
 container_class: white-background
+
 services:
 - title: Mobile Apps Development
   description: iOS native apps & cordova/phonegap apps
   thumb: service_mobile.png
+  url: service
 - title: Website Development
   description: Ruby on Rails, NodeJs, Frontend, CMS
   thumb: service_website.png
+  url: service
+
+profile_title: "Hi! I'm Pham, a fullstack developer in Helsinki"
+profile_description: "I'm passionate about making beautiful website and mobile apps. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here"
+profile_thumb: quang1.jpg
+contact_url: contact
+
 ---
 
 <div class="container container-masonry">
@@ -17,9 +26,9 @@ services:
       <div class="box col-sm-4 col-md-6">
         <div class="thumb featured">
           <div class="photo">
-            <a href="contact.html">
-              <img src="{{ site.url }}/assets/img/quang1.jpg" alt="" width="715" height="715">
-              <span class="info"><strong class="big-title">Hi! I'm Pham, a fullstack developer in Helsinki</strong><span class="excerpt">I'm passionate about making beautiful website and mobile apps. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here</span><em class="arrow-right"></em></span>
+            <a href="{{site.url}}{{page.contact_url}}">
+              <img src="{{site.url}}/assets/img/{{page.profile_thumb}}" alt="" width="715" height="715">
+              <span class="info"><strong class="big-title">{{page.profile_title}}</strong><span class="excerpt">{{page.profile_description}}</span><em class="arrow-right"></em></span>
             </a>
           </div>
         </div>
@@ -29,7 +38,7 @@ services:
       <div class="box col-xs-6 col-sm-4 col-md-3">
         <div class="thumb featured">
           <div class="photo">
-            <a href="project.html">
+            <a href="{{site.url}}{{service.url}}">
               <img src="{{ site.url }}/assets/img/{{service.thumb}}" alt="" width="434" height="434">
               <span class="info"><strong class="title">{{service.title}}</strong><span class="excerpt">{{service.description}}</span></span>
             </a>
