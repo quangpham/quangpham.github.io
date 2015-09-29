@@ -1,3 +1,5 @@
+// $.ajax( { url: 'https://api.mongolab.com/api/1/databases/quangpham-com/collections/website/560a662ce4b05eb6ff4e9858?apiKey=JDJZ1z9STUdxPyqDqmjVqwsHahD9sAXd',crossDomain : true,type: "DELETE",contentType: "application/json" } );
+
 var guid = (function() {
   function s4() {
     return Math.floor((1 + Math.random()) * 0x10000)
