@@ -12,9 +12,9 @@ var guid = (function() {
 })();
 
 window.sendDataToMongolab = function(dbcollection, data) {
-		if (window.location.href.indexOf("http://localhost:4000/") > -1) { return; }
+    if (window.location.href.indexOf("http://localhost:4000/") > -1) { return; }
 
-		data.url = window.location.pathname
+    data.url = window.location.pathname;
     
     data.ip = JSON.parse(Cookies('qpa_ipdata'));
     if (data.ip.isp == "Tumblr") { return; }
@@ -57,4 +57,12 @@ window.initializeMongoAnalytic = function(){
 
 $(document).ready(function() {
     window.initializeMongoAnalytic();
+
+    $('a').click(function(){
+        if ($(this).attr('target') == '_blank') {
+            window.sendDataToMongolab("website", {ext_url: $(this).attr('href')});
+        }
+        return true;
+    });
+
 });
