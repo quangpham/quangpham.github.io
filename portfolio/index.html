@@ -117,7 +117,7 @@ companies:
 	<div class="owl-carousel owl-clients owl-round-arrows">
 		{% for company in page.companies %}
 		<div class="client-column">
-			<a href="{{company.website}}">
+			<a href="{{company.website}}" target="_blank">
 				<img src="{{ site.url }}/assets/img/companies/{{company.logo}}" width="560" height="150" alt="">
 			</a>
 		</div>
@@ -136,7 +136,7 @@ companies:
 					{% for testimonial in page.testimonials %}
 					<div class="testimonial-item">
 						<p>{{testimonial.description}}</p>
-						<a href="{{testimonial.linkedin_url}}"><em class="name">{{testimonial.title}}</em></a>
+						<a href="{{testimonial.linkedin_url}}" target="_blank"><em class="name">{{testimonial.title}}</em></a>
 					</div>
 					{% endfor %}
 				</div>
