@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="no-js">
+  {% include head.html %}
+  <body>
+		
+		<header id="top" class="navbar" role="banner">
+		  <div class="container">
+		    <div class="inner">
+		      {% include header_logo.html %}
+		      {% include header_nav_portfolio.html %}
+		    </div>
+		  </div>
+		</header>
+    <main id="content" class="white-background" role="main">
+			<div class="container">
+				<h2 class="single-title">{{page.title}}</h2>
+				<div class="owl-carousel owl-slider">
+					{% for thumb in page.thumbs %}
+					<img src="{{site.url}}/assets/img/{{thumb}}" width="1240" height="698" alt="">
+					{% endfor %}
+				</div>
+				<div class="margin-3"></div>
+				<div class="row">
+					<div class="col-sm-4 col-md-3 project-properties">
+						<h6>Clients</h6>
+						<p class="small">{{page.client}}</p>
+						<h6>Category</h6>
+						<p class="small">{{page.category}}</p>
+					</div>
+					<div class="col-sm-8 col-md-8 col-md-offset-1">
+						{{content}}
+					</div>
+				</div>
+				<div class="margin-6"></div>
+			</div>
+    </main>	
+    {% include footer.html %}
+  </body>
+</html>
+

@@ -1,0 +1,14 @@
+<div id="site-menu">
+  <nav>
+    <ul>
+      {% for nav in site.nav_items %}
+      {% capture page_url %}{{ nav.url }}index.html{% endcapture %}
+        {% if page.url == page_url %}
+          <li class="current-menu-parent"><a href="{{ nav.url | prepend: site.baseurl }}">{{ nav.title }}</a></li>
+        {% else %}
+          <li><a href="{{ nav.url | prepend: site.baseurl }}">{{ nav.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+</div>

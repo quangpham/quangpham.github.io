@@ -66,3 +66,10 @@ jQuery(".owl-carousel.owl-clients").owlCarousel({
 		}
 	}
 });
+
+jQuery(".owl-carousel.owl-slider").owlCarousel({
+	items   : 1,
+	nav     : true,
+	navText : ['', ''],
+	loop    : true
+});
