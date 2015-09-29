@@ -9,13 +9,15 @@ github_username:  quangpham
 # Build settings
 markdown: kramdown
 resume_url: "http://quangpham.com"
-paginate: 9
+paginate: 8
 paginate_path: "/blog/page:num/"
 nav_items:
 - title: Home
   url: /
 - title: About
   url: /about/
+- title: Service
+  url: /service/
 - title: Portfolio
   url: /portfolio/
 - title: Blog
