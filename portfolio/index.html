@@ -2,60 +2,86 @@
 layout: default
 title: Portfolio
 container_class: white-background
+
 portfolios:
 - title: Hauser Mobile
   description: Great tool for residents communication
   thumb: s_hauser2.jpg
+  url: "https://itunes.apple.com/us/app/hauser-mobile/id992103031?mt=8"
 - title: Sayduck
   description: Sayduck app is using 3D technology to help you buying furniture
   thumb: s_sayduck.jpg
+  url: "https://itunes.apple.com/us/app/sayduck-make-your-space-beautiful/id626844409?mt=8"
 - title: Introdex
   description: Introdex is an interactive business card application
   thumb: s_introdex3.jpg
+  url: "https://itunes.apple.com/us/app/introdex/id566542977?mt=8"
 - title: Freedom
   description: Sayduck app is using 3D technology to help you buying furniture
   thumb: s_freedom.jpg
+  url: "https://itunes.apple.com/us/app/freedom-furniture/id857645338?mt=8"
 - title: Boardbar
   description: Sayduck app is using 3D technology to help you buying furniture
   thumb: s_boardbar.jpg
+  url: "https://itunes.apple.com/us/app/bordbar/id640456133?mt=8"
 - title: Domayne
   description: Sayduck app is using 3D technology to help you buying furniture
   thumb: s_domayne.jpg
+  url: "https://itunes.apple.com/us/app/domayne-live/id863059224?mt=8"
 - title: Piano chord finder
   description: Piano chord finder is Symbian & Meego app that helps you to find piano chord
   thumb: s_piano-chord.jpg
+  url: "http://qt-apps.org/content/show.php/Piano+Chord+Finder?content=136989"
 - title: Where 2 eat
   description: Where2eat is a Symbian & Meego app that helps you to find best-place-to-eat
   thumb: s_where-2-eat2.jpg
+  url: "http://qt-apps.org/content/show.php/2eat?content=136863"
 - title: meego.com
   description: Website development with Drupal
   thumb: s_meego.jpg
+  url: "http://developer.meego.com"
 - title: Anu Koivunen
   description: Simple business website hosted on github
   thumb: s_anukoivunen.jpg
+  url: "http://anukoivunen.com/fi/"
 - title: Outi Trast
   description: Simple business website hosted on github
   thumb: s_outi.jpg
+  url: "http://trast.fi/"
 - title: Trando Oy
   description: Simple business website hosted on github
   thumb: s_trando.jpg
+  url: "http://trando.fi/"
+
 testimonials:
 - title: Mikko Martikainen - CEO, Founder of Sayduck
   description: Quang has an excellent capacity to quickly learn new technologies, and he has always been very proactive in coming up with solutions to difficult problems
+  linkedin_url: "https://fi.linkedin.com/pub/mikko-martikainen/1/570/900"
 - title: Pasi Lindholm - CEO, Partner, Introdex Oy
   description: Quang is a very skilled and motivated software professional, who can independently develop demanding mobile phone applications and HTML/JavaScript - based services
+  linkedin_url: "https://fi.linkedin.com/pub/pasi-lindholm/0/661/5b"
 - title: Outi Trast - CEO, Lakiasiaintoimisto Trast Oy
   description: Quang delivered an elegant website as a "turn-key" package and also helped me to set-up website domains, hosting and email. I can warmly recommend him for other entrepreneurs
+  linkedin_url: "https://fi.linkedin.com/pub/outi-trast/26/167/125"
 - title: Anu Koivunen - FM (ruotsin kääntäminen ja tulkkaus, Helsingin yliopisto)
   description: Quang on osaava asiantuntija, joka kuuntelee asiakkaansa toivomuksia, ottaa vastaan palautetta ja varmistaa, että kaikki toimii niin kuin pitääkin. Suosittelen lämpimästi!
+  linkedin_url: "https://fi.linkedin.com/pub/anu-koivunen/80/294/23b"
+
 companies:
 - logo: mirum.png
+  website: "http://www.mirumagency.com/helsinki"
 - logo: introdex.png
+  website: "http://www.introdex.com/"
 - logo: sayduck.png
+  website: "http://www.sayduck.com/"
 - logo: tds.png
+  website: "http://topdatascience.com/"
 - logo: wri.png
+  website: "http://www.wri.fi/"
 - logo: anukoivunen-com.png
+  website: "http://www.anukoivunen.com/"
 - logo: trast-fi.png
+  website: "http://www.trast.fi/"
 ---
 
 <div class="container container-masonry">
@@ -75,7 +101,7 @@ companies:
 			<div class="box col-xs-6 col-sm-4 col-md-3">
 				<div class="thumb">
 					<div class="photo">
-						<a href="#">
+						<a href="{{portfolio.url}}" target="_blank">
 							<img src="{{ site.url }}/assets/img/portfolio/{{portfolio.thumb}}" alt="" width="434" height="434">
 							<span class="info"><strong class="title">{{portfolio.title}}</strong><span class="excerpt">{{portfolio.description}}</span><em class="arrow-right"></em></span>
 						</a>
@@ -91,7 +117,9 @@ companies:
 	<div class="owl-carousel owl-clients owl-round-arrows">
 		{% for company in page.companies %}
 		<div class="client-column">
-			<img src="{{ site.url }}/assets/img/companies/{{company.logo}}" width="560" height="150" alt="">
+			<a href="{{company.website}}">
+				<img src="{{ site.url }}/assets/img/companies/{{company.logo}}" width="560" height="150" alt="">
+			</a>
 		</div>
 		{% endfor %}
 	</div>
@@ -108,7 +136,7 @@ companies:
 					{% for testimonial in page.testimonials %}
 					<div class="testimonial-item">
 						<p>{{testimonial.description}}</p>
-						<em class="name">{{testimonial.title}}</em>
+						<a href="{{testimonial.linkedin_url}}"><em class="name">{{testimonial.title}}</em></a>
 					</div>
 					{% endfor %}
 				</div>

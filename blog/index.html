@@ -1,6 +1,14 @@
 ---
 layout: default
 title: Blog
+
+popular_posts:
+- title: Another reason to migrate my backend from RoR to Go
+  url: "blogs/2015/06/25/one-more-reason-why-i-need-to-migrate-to-go.html"
+- title: How much does it cost to create an app?
+  url: "blogs/2013/10/28/how-much-does-it-cost-to-create-an-app.html"
+- title: Unity and native iOS bridge
+  url: "blogs/2013/08/29/unity-and-ios-bridge.html"
 ---
 
 <div class="container container-masonry">
@@ -86,16 +94,15 @@ title: Blog
 			<div class="col-sm-3">
 				<div class="widget">
 					<h6 class="title">Popular posts</h6>
-					<p class="no-bottom">We are a digital agency with 20 plus years of collective experience in the business.</p>
-				</div>
-
-				<div class="widget widget_categories">
-					<h6 class="title">Categories</h6>
-					<ul>
-						<li class="cat-item"><a href="blog.html">Advertising</a></li>
-						<li class="cat-item current-cat"><a href="blog.html">Branding</a></li>
-						<li class="cat-item"><a href="blog.html">Marketing</a></li>
-					</ul>
+					<ul class="fa-ul">
+					{% for post in page.popular_posts %}
+						<li class="cat-item">
+							<a href="{{site.url}}{{post.url}}">
+								<i class="fa-li fa fa-angle-right fa-colored"></i> {{post.title}}
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
 				</div>
 			</div>
 
