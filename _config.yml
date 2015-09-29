@@ -16,8 +16,6 @@ nav_items:
   url: /
 - title: About
   url: /about/
-- title: Service
-  url: /service/
 - title: Portfolio
   url: /portfolio/
 - title: Blog
