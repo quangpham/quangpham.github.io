@@ -18,6 +18,7 @@ window.sendDataToMongolab = function(dbcollection, data) {
     
     data.ip = JSON.parse(Cookies('qpa_ipdata'));
     if (data.ip.isp == "Tumblr") { return; }
+    if (data.ip.isp == "Googlebot") { return; }
 
     data.browser = navigator.userAgent;
     if (data.browser == "gosquared-thumbnailer/1.0") { return; }
