@@ -1,7 +1,76 @@
 ---
 layout: default
-title: Contact
+title: QuangPham's Resume
 container_class: white-background
+
+schools:
+- name: Ho Chi Minh Telecommunication University, Vietnam, 2003-2007
+  degree: Bachelor of Computer Science, Software Engineering
+- name: Haaga-Helia University of Applied Science, Finland, 2008-2012
+  degree: Bachelor of Business Information Technology
+
+skills:
+- Strong background in various programming languages and frameworks: C++, C#, Qt/QML, Silverlight, Python, Javascript, PHP, ASP (.NET).
+- Fluency in web applications development on LAMP, PHP, HTML, CSS, LESS, Sass, AJAX, MySQL, Drupal, Joomla, Expression Engine, Codelgniter, Wordpress
+- Experienced in cross platform mobile development Titanium Mobile, Jquery Mobile, Sencha-Touch, Phonegap.
+- Experienced in responsive web, HTML5 mobile application.
+- Understanding in system integrations with API interfaces (YQL, Amazon Web Services, Google API, Facebook API, Twitter API).
+- Experienced in data crawling & data mining with Scrapy framework & QCrawler (self development)
+- Knowledge in Agile Software Development, experienced in SCRUM.
+
 ---
 
-Resume
+<div class="container">
+	<h3>Resume</h3>
+	<div class="margin-2"></div>
+	<h6 class="heading"><span>Education</span></h6>
+	<ul>
+		{% for school in page.schools %}
+		<li>{{school.name}}<br>{{school.degree}}</li>
+		{% endfor %}
+	</ul>
+
+	<div class="margin-2"></div>
+	<h6 class="heading"><span>Skills and Competences</span></h6>
+	<ul>
+		{% for skill in page.skills %}
+		<li>{{skill}}</li>
+		{% endfor %}
+	</ul>
+
+	<div class="margin-2"></div>
+	<h6 class="heading"><span>Work Experiences</span></h6>
+	<p>My experience as the developer in diverse projects with large multinational corporations such as Nokia, Nokia Siemen Network, Lumene, Hartwall, Stonesoft, Viasat, Footbalance, Nike, etc. will definitely be an asset for your business.</p>
+	<ul>
+		<li>
+			06.03.2011 - current | Developer, Activeark Oy<br>
+			- Developing websites (frontend and backend) using Drupal, Codelgniter, Express Engine, Joomla<br>
+			- Developing mobile website using with Drupal, Web Responsive Tech, HTML5<br>
+			- Developing web apps and native apps for mobiles using Titanium and Sencha-Touch<br>
+			- Integrating Google Map API into web application and mobile application
+		</li>
+		<li>
+			15.01.2012-15.02.2012 | Localization Tester, Symbio Oy<br>
+			- Vietnamese Localization Testing
+		</li>
+		<li>
+			01.02.2006 - 30.03.2007 | Web developer, ABB Solution Ltd, Vietnam <br>
+			- Developing and designing templates and components for Joomla
+		</li>
+	</ul>
+
+	<div class="margin-2"></div>
+	<h6 class="heading"><span>Community Contribution</span></h6>
+	<ul>
+		<li>Team Coordinator for Vietnamese Localization in Meego Project | (https://meego.transifex.net/projects/p/meego/team/vi/)</li>
+		<li>Member of Vietnamese Localization Team in Joomla Project | http://joomlaviet.vn</li>
+	</ul>
+
+	<div class="margin-2"></div>
+	<h6 class="heading"><span>Additional Information</span></h6>
+	<ul>
+		<li>Languages: English (proficient), Vietnamese (native), Finnish (basic)</li>
+		<li>Strong analytical capability, high level of self-motivation and independence</li>
+		<li>Fast self-study in new technology, good communication skills, teamwork spirit</li>
+	</ul>
+</div>
