@@ -1,5 +1,20 @@
 // $.ajax( { url: 'https://api.mongolab.com/api/1/databases/quangpham-com/collections/website/560a662ce4b05eb6ff4e9858?apiKey=JDJZ1z9STUdxPyqDqmjVqwsHahD9sAXd',crossDomain : true,type: "DELETE",contentType: "application/json" } );
 
+function $_GET_PARAM(param) {
+    var vars = {};
+    window.location.href.replace( 
+        /[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+        function( m, key, value ) { // callback
+            vars[key] = value !== undefined ? value : '';
+        }
+    );
+
+    if ( param ) {
+        return vars[param] ? vars[param] : null;    
+    }
+    return vars;
+}
+
 var guid = (function() {
   function s4() {
     return Math.floor((1 + Math.random()) * 0x10000)
@@ -40,8 +55,12 @@ window.sendDataToMongolab = function(dbcollection, data) {
     });
 }
 
-window.initializeMongoAnalytic = function(){
+window.initializeMongoAnalytic = function(){        
     // Init uuid
+    if ($_GET_PARAM("_su")) {
+        Cookies.set('qpa_uuid', $_GET_PARAM("_su"), { expires: 365*24 });
+    }
+
     if (typeof Cookies('qpa_uuid') === 'undefined'){
         Cookies.set('qpa_uuid', guid(), { expires: 365*24 });
     }
