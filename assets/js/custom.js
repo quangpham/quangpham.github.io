@@ -24,7 +24,7 @@ jQuery(".owl-carousel.owl-testimonials2").owlCarousel({
 	navText : ['', ''],
 	dots    : true
 }).on('changed.owl.carousel', function(event) {
-    window.sendDataToMongolab("website", {ext_url: "testimonials index" + event.item.index.toString()} );
+    window.sendDataToMongolab("website", {ext_url: "testimonials " + event.item.index.toString()} );
 });
 
 jQuery(".owl-carousel.owl-thumbs").owlCarousel({
@@ -66,7 +66,7 @@ jQuery(".owl-carousel.owl-clients").owlCarousel({
 		}
 	}
 }).on('changed.owl.carousel', function(event) {
-    window.sendDataToMongolab("website", {ext_url: "clients index" + event.item.index.toString()} );
+    window.sendDataToMongolab("website", {ext_url: "clients " + event.item.index.toString()} );
 });
 
 jQuery(".owl-carousel.owl-slider").owlCarousel({
