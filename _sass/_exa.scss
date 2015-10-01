@@ -4030,3 +4030,45 @@ img.round {
 	a, a:visited { text-decoration: underline; }
 
 }
+
+
+
+
+
+
+
+
+
+
+.homepage {
+	.homepage-post {
+		span.info {
+			strong.title {
+				font-size: x-small;
+				text-transform: uppercase;
+			}
+			span.excerpt {
+				font-size: medium;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.homepage {
+		.thumb.featured.homepage-post {
+			.info {
+				.excerpt {
+					display: block;
+				}
+			}
+		} 
+		.thumb.featured.homepage-service {
+			.info {
+				.excerpt {
+					display: block;
+				}
+			}
+		} 
+	}
+}
