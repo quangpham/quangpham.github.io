@@ -41,7 +41,8 @@ window.sendDataToMongolab = function(dbcollection, data) {
 
     data.screen_size = $(window).width().toString() + "x" + $(window).height().toString();
     data.qp_uuid = Cookies('qpa_uuid');
-
+    data.qp_user_name = Cookies('qpa_user_name');
+    
     var created_time = new Date();
     data.created_at = created_time.toString();
     data.timestamp = created_time.getTime();    
@@ -58,7 +59,7 @@ window.sendDataToMongolab = function(dbcollection, data) {
 window.initializeMongoAnalytic = function(){        
     // Init uuid
     if ($_GET_PARAM("_su")) {
-        Cookies.set('qpa_uuid', $_GET_PARAM("_su"), { expires: 365*24 });
+        Cookies.set('qpa_user_name', $_GET_PARAM("_su"), { expires: 365*24 });
     }
 
     if (typeof Cookies('qpa_uuid') === 'undefined'){
