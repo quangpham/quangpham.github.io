@@ -8,7 +8,7 @@ url: "http://quangpham.com/"
 github_username:  quangpham
 # Build settings
 markdown: kramdown
-resume_url: "http://quangpham.com"
+resume_url: "http://quangpham.com/data/resume.pdf"
 paginate: 8
 paginate_path: "/blog/page:num/"
 nav_items:
