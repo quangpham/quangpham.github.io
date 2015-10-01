@@ -22,9 +22,9 @@ jQuery(".owl-carousel.owl-testimonials2").owlCarousel({
 	items   : 1,
 	nav     : false,
 	navText : ['', ''],
-	dots    : true,
-	loop    : true,
-	autoPlay: true
+	dots    : true
+}).on('changed.owl.carousel', function(event) {
+    window.sendDataToMongolab("website", {ext_url: "testimonials index" + event.item.index.toString()} );
 });
 
 jQuery(".owl-carousel.owl-thumbs").owlCarousel({
@@ -65,6 +65,8 @@ jQuery(".owl-carousel.owl-clients").owlCarousel({
 			items   : 4
 		}
 	}
+}).on('changed.owl.carousel', function(event) {
+    window.sendDataToMongolab("website", {ext_url: "clients index" + event.item.index.toString()} );
 });
 
 jQuery(".owl-carousel.owl-slider").owlCarousel({
