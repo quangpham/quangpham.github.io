@@ -4054,6 +4054,32 @@ img.round {
 	}
 }
 
+@media (max-width: 768px) {
+	// background-color: rgba(255, 255, 255, 0.85);
+	.post-box.custom-post-box {
+		.image-link {
+			img {
+				opacity: 0.1;
+			}
+		}
+		.extra-info {
+			// background-color: rgba(255, 255, 255, 0.85);
+			position: absolute;
+			top: 10px;
+			p {
+				color: black;
+			}
+		}
+	}
+}
+
+// @media (min-width: 480px) {
+// 	.extra-info.custom-post-box {
+// 		position: absolute;
+// 		top: 10px;
+// 	}
+// }
+
 @media (min-width: 768px) {
 	.homepage {
 		.thumb.featured.homepage-post {
@@ -4072,3 +4098,6 @@ img.round {
 		} 
 	}
 }
+
+
+

@@ -24,7 +24,7 @@ popular_posts:
 								<div class="photo">
 									<a href="{{post.url}}">
 										<img src="{{site.url}}/assets/img/blog/cover/{{post.cover_image}}" alt="" width="715" height="715">
-										<span class="info"><strong class="big-title">{{ post.title }}</strong><span class="excerpt">{{ post.excerpt }}</span><em class="arrow-right"></em></span>
+										<span class="info"><strong class="big-title">{{ post.title }}</strong><span class="excerpt">{{ post.date | date: "%b %-d, %Y" }}  {{ post.excerpt }}</span><em class="arrow-right"></em></span>
 									</a>
 								</div>
 							</div>
@@ -33,7 +33,7 @@ popular_posts:
 
 						{% if forloop.index == 2 %}
 						<div class="box col-sm-4">
-							<div class="post-box vertical clearfix">
+							<div class="post-box vertical clearfix custom-post-box">
 								<a href="{{post.url}}" class="image-link arrow-icon"><img src="{{site.url}}/assets/img/blog/cover/{{post.cover_image}}" width="434" height="434" alt=""></a>
 								<div class="extra-info">
 									<p class="meta small">{{ post.date | date: "%b %-d, %Y" }}</p>
@@ -68,7 +68,7 @@ popular_posts:
 			{% for post in paginator.posts %}
 				{% if forloop.index == 3 or forloop.index == 4 or forloop.index == 5 or forloop.index == 6 or forloop.index == 7 or forloop.index == 8 %}
 				<div class="box col-sm-6">
-					<div class="post-box horizontal clearfix">
+					<div class="post-box horizontal clearfix custom-post-box">
 						<a href="{{post.url}}" class="image-link arrow-icon"><img src="{{site.url}}/assets/img/blog/cover/{{post.cover_image}}" width="434" height="434" alt=""></a>
 						<div class="extra-info">
 							<p class="meta small">{{ post.date | date: "%b %-d, %Y" }}</p>
