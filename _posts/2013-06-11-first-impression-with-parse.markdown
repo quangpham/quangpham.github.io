@@ -1,11 +1,14 @@
 ---
 layout: post
 title:  "First impression with parse"
-date:   2013-02-11 11:14:31
+date:   2013-06-11 11:14:31
 cover_image: parse.gif
 categories: blogs
 ---
-Parse.com helps app developers to speed up their project development time by providing a fast-setup and easy-to-use backend. The developers can leave the pain of backend development, server deployment, security issues, etc for Parse.com and focus on their main thing. I have been using Parse.com for couple projects and here are some impressions about Parse.com
+Parse.com helps app developers to speed up their project development time by providing a fast-setup and ready-to-use backend. The developers don't need to worry about backend development, server deployment, security issues. They can just leave the most painful in the backend development for Parse and only focus on their main business. I've tried using Parse since they released their beta version in early 2012. It is quite simple and easy to use frame work. I didn't spend too much time to get started with their library. In fact, it took me only almost 2 days to create an iOS apps with Parse integrated.
+
+
+It has been a while since I tried Parse in some of my projects and I really recommend the app developers tontry it out. Especially, it has gain better performance after being acquired by the giant Facebook. These are my thoughts about Parse as an app developer and hopefully they would be useful for you to choose your backend architecture.
 
 ###### Ready-made data communication layers
 
