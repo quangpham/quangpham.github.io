@@ -10,14 +10,44 @@ schools:
   degree: Bachelor of Business Information Technology
 
 skills:
-- Strong background in various programming languages and frameworks: C++, C#, Qt/QML, Silverlight, Python, Javascript, PHP, ASP (.NET).
-- Fluency in web applications development on LAMP, PHP, HTML, CSS, LESS, Sass, AJAX, MySQL, Drupal, Joomla, Expression Engine, Codelgniter, Wordpress
-- Experienced in cross platform mobile development Titanium Mobile, Jquery Mobile, Sencha-Touch, Phonegap.
-- Experienced in responsive web, HTML5 mobile application.
-- Understanding in system integrations with API interfaces (YQL, Amazon Web Services, Google API, Facebook API, Twitter API).
-- Experienced in data crawling & data mining with Scrapy framework & QCrawler (self development)
+- "Strong background in various programming languages: Objective-C, Swift, Go, Javascript, C++, C#, PHP, Ruby and Python"
+- Experienced in mobile development with iOS (Objective-C & Swift), Cordova/Phonegap (Ionicframework, Sencha), Unity (C#) and Qt (QML, C++)
+- Experienced in backend development with Ruby on Rails, Nodejs and Go
+- Fluency in many web technologies such as HTML, CSS (LESS & SASS), Javascript (AngularJS, React, Jquery, Backbone), CMS (Drupal, Joomla, Wordpress)
+- "Familiar with DevOps and Cloud services: Amazon AWS, DigitalOcean, Docker"
+- "Experienced in data sciences: data crawling/collecting and data visualization"
 - Knowledge in Agile Software Development, experienced in SCRUM.
-
+work_experiences:
+- time: "Apr 2013 - Aug 2014"
+  position: Software Developer
+  company_name: Sayduck Oy
+  tasks:
+  - Developing Augmented Reality applicatons with Unity & Vuforia
+  - Optimising UI for Sayduck app in iOS & Android
+- time: "Jul 2012 - Apr 2013"
+  position: Software Developer
+  company_name: Introdex Oy
+  tasks:
+  - Developing iOS application with Apple native development kit
+- time: "Feb 2010 - Jul 2012"
+  position: Developer
+  company_name: Mirum (Activeark Oy)
+  company_website: http://mirumagency.com/helsinki
+  tasks:
+  - Developing websites (frontend and backend) using Drupal, Codelgniter, Express Engine, Joomla
+  - Developing mobile website using with Drupal, Web Responsive Tech, HTML5
+  - Developing web apps and native apps for mobiles using Titanium and Sencha-Touch
+  - Integrating Google Map API into web application and mobile application
+- time: "Jan 2010 - Mar 2012"
+  position: Localization Tester
+  company_name: Symbio
+  tasks:
+  - Localization testing for mobile applications running on Nokia phones
+- time: "Feb 2006 - Mar 2007"
+  position: Web developer
+  company_name: ABB Solution Ltd
+  tasks:
+  - Developing templates & components for Joomla
 ---
 
 <div class="container">
@@ -42,29 +72,39 @@ skills:
 	<h6 class="heading"><span>Work Experiences</span></h6>
 	<p>My experience as the developer in diverse projects with large multinational corporations such as Nokia, Nokia Siemen Network, Lumene, Hartwall, Stonesoft, Viasat, Footbalance, Nike, etc. will definitely be an asset for your business.</p>
 	<ul>
+		{% for experience in page.work_experiences %}
 		<li>
-			06.03.2011 - current | Developer, Activeark Oy<br>
-			- Developing websites (frontend and backend) using Drupal, Codelgniter, Express Engine, Joomla<br>
-			- Developing mobile website using with Drupal, Web Responsive Tech, HTML5<br>
-			- Developing web apps and native apps for mobiles using Titanium and Sencha-Touch<br>
-			- Integrating Google Map API into web application and mobile application
+			{{experience.time}} | {{experience.position}} at {{experience.company_name}}<br>
+			{% for task in experience.tasks %}
+			- {{task}}<br>
+			{% endfor %}
 		</li>
-		<li>
-			15.01.2012-15.02.2012 | Localization Tester, Symbio Oy<br>
-			- Vietnamese Localization Testing
-		</li>
-		<li>
-			01.02.2006 - 30.03.2007 | Web developer, ABB Solution Ltd, Vietnam <br>
-			- Developing and designing templates and components for Joomla
-		</li>
+		{% endfor %}
 	</ul>
 
 	<div class="margin-2"></div>
 	<h6 class="heading"><span>Community Contribution</span></h6>
 	<ul>
-		<li>Team Coordinator for Vietnamese Localization in Meego Project | (https://meego.transifex.net/projects/p/meego/team/vi/)</li>
-		<li>Member of Vietnamese Localization Team in Joomla Project | http://joomlaviet.vn</li>
+		<li>Team Coordinator for <a href="https://meego.transifex.net/projects/p/meego/team/vi/">Meego Localization Project</a> (Vietnamese language)</li>
+		<li>Member of <a href="http://joomlaviet.vn<">Vietnamese Localization Team</a> in Joomla Project</li>
 	</ul>
+
+
+	<div class="margin-1"></div>
+	<h6 class="heading"><span>Trainings, Seminars & Professional Development</span></h6>
+	<p>
+		- <a href="http://futurice.com/events/native-mobile-training-2015">Futurice Native Mobile Apps Development</a> in Helsinki, Sep 2015<br>
+		- <a href="http://ngeurope.org/">AngularJS European conference</a> in Paris, Oct 2014<br>
+	</p>
+
+	<div class="margin-1"></div>
+	<h6 class="heading"><span>Awards & Recognitions</span></h6>
+	<p>
+		- My startup <a href="http://arency.com" target="_blank">Arency</a>, which provided Augmented Reality solution, was selected in Summer of Startups 2012 in Helsinki. Watch more about us in Aalto's <a href="https://www.youtube.com/watch?v=wyNM7HN3YAE" target="_blank">youtube</a> channel<br>
+		- I was chosen to be a member of Nokia Launchpad Certified Developer Program, <a href="http://wiki.meego.com/Community_Office/Community_device_program/Nokia" target="_blank">N9 Devkit program</a><br>
+		- My app <a href="http://qt-apps.org/usermanager/search.php?username=quangpham&action=contents" target="_blank">Piano Chord Finder</a> won 2 awards in Nokia Qt mobile development competition 2011. Read more on Nokia blog posts at <a href="http://blog.qt.io/blog/2011/01/31/qtapps-org-early-bird-winners/" target="_blank">here</a> & <a href="http://blog.qt.nokia.com/2011/06/27/qt-apps-org-mobile-app-porting-contest-%E2%80%93-the-winners/" target="_blank">here</a><br>
+		- Helsinki Mobile <a href="http://mobiledevcamp.fi/" target="_blank">Hackathon</a> winner 2010<br>
+	</p>
 
 	<div class="margin-2"></div>
 	<h6 class="heading"><span>Additional Information</span></h6>
