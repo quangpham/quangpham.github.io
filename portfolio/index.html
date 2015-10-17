@@ -4,50 +4,54 @@ title: Portfolio
 container_class: white-background
 
 portfolios:
-- title: Hauser Mobile
-  description: Great tool for residents communication
-  thumb: s_hauser2.jpg
-  url: "https://itunes.apple.com/us/app/hauser-mobile/id992103031?mt=8"
-- title: Sayduck
-  description: Sayduck app is using 3D technology to help you buying furniture
-  thumb: s_sayduck.jpg
-  url: "https://itunes.apple.com/us/app/sayduck-make-your-space-beautiful/id626844409?mt=8"
-- title: Introdex
-  description: Introdex is an interactive business card application
-  thumb: s_introdex3.jpg
-  url: "https://itunes.apple.com/us/app/introdex/id566542977?mt=8"
-- title: Freedom
-  description: Sayduck app is using 3D technology to help you buying furniture
-  thumb: s_freedom.jpg
-  url: "https://itunes.apple.com/us/app/freedom-furniture/id857645338?mt=8"
-- title: Boardbar
-  description: Sayduck app is using 3D technology to help you buying furniture
-  thumb: s_boardbar.jpg
-  url: "https://itunes.apple.com/us/app/bordbar/id640456133?mt=8"
-- title: Domayne
-  description: Sayduck app is using 3D technology to help you buying furniture
-  thumb: s_domayne.jpg
-  url: "https://itunes.apple.com/us/app/domayne-live/id863059224?mt=8"
-- title: Piano chord finder
-  description: Piano chord finder is Symbian & Meego app that helps you to find piano chord
-  thumb: s_piano-chord.jpg
-  url: "http://qt-apps.org/content/show.php/Piano+Chord+Finder?content=136989"
-- title: Where 2 eat
-  description: Where2eat is a Symbian & Meego app that helps you to find best-place-to-eat
-  thumb: s_where-2-eat2.jpg
-  url: "http://qt-apps.org/content/show.php/2eat?content=136863"
-- title: Anu Koivunen
-  description: Simple business website hosted on github
-  thumb: s_anukoivunen.jpg
-  url: "http://anukoivunen.com/fi/"
-- title: Outi Trast
-  description: Simple business website hosted on github
-  thumb: s_outi.jpg
-  url: "http://trast.fi/"
-- title: Trando Oy
-  description: Simple business website hosted on github
-  thumb: s_trando.jpg
-  url: "http://trando.fi/"
+- type: Mobile Development
+  projects:
+  - title: Hauser Mobile
+    description: Great tool for residents communication
+    thumb: s_hauser2.jpg
+    url: "https://itunes.apple.com/us/app/hauser-mobile/id992103031?mt=8"
+  - title: Sayduck
+    description: Sayduck app is using 3D technology to help you buying furniture
+    thumb: s_sayduck.jpg
+    url: "https://itunes.apple.com/us/app/sayduck-make-your-space-beautiful/id626844409?mt=8"
+  - title: Introdex
+    description: Introdex is an interactive business card application
+    thumb: s_introdex3.jpg
+    url: "https://itunes.apple.com/us/app/introdex/id566542977?mt=8"
+  - title: Freedom
+    description: Sayduck app is using 3D technology to help you buying furniture
+    thumb: s_freedom.jpg
+    url: "https://itunes.apple.com/us/app/freedom-furniture/id857645338?mt=8"
+  - title: Boardbar
+    description: Sayduck app is using 3D technology to help you buying furniture
+    thumb: s_boardbar.jpg
+    url: "https://itunes.apple.com/us/app/bordbar/id640456133?mt=8"
+  - title: Domayne
+    description: Sayduck app is using 3D technology to help you buying furniture
+    thumb: s_domayne.jpg
+    url: "https://itunes.apple.com/us/app/domayne-live/id863059224?mt=8"
+  - title: Piano chord finder
+    description: Piano chord finder is Symbian & Meego app that helps you to find piano chord
+    thumb: s_piano-chord.jpg
+    url: "http://qt-apps.org/content/show.php/Piano+Chord+Finder?content=136989"
+  - title: Where 2 eat
+    description: Where2eat is a Symbian & Meego app that helps you to find best-place-to-eat
+    thumb: s_where-2-eat2.jpg
+    url: "http://qt-apps.org/content/show.php/2eat?content=136863"
+- type: Web Development
+  projects:
+  - title: Anu Koivunen
+    description: Simple business website hosted on github
+    thumb: s_anukoivunen.jpg
+    url: "http://anukoivunen.com/fi/"
+  - title: Outi Trast
+    description: Simple business website hosted on github
+    thumb: s_outi.jpg
+    url: "http://trast.fi/"
+  - title: Trando Oy
+    description: Simple business website hosted on github
+    thumb: s_trando.jpg
+    url: "http://trando.fi/"
 
 disable_ortfolios:
 - title: meego.com
@@ -72,10 +76,10 @@ testimonials:
 companies:
 - logo: mirum.png
   website: "http://www.mirumagency.com/helsinki"
-- logo: introdex.png
-  website: "http://www.introdex.com/"
 - logo: sayduck.png
   website: "http://www.sayduck.com/"
+- logo: introdex.png
+  website: "http://www.introdex.com/"
 - logo: tds.png
   website: "http://topdatascience.com/"
 - logo: wri.png
@@ -87,35 +91,7 @@ companies:
 ---
 
 <div class="container container-masonry">
-	<div class="inner">
-		<div class="row">
-<!-- 			<div class="box col-sm-4 col-md-6">
-				<div class="thumb featured">
-					<div class="photo">
-						<a href="project.html">
-							<img src="img/portfolio/hauser2.jpg" alt="" width="715" height="715">
-							<span class="info"><strong class="title">Hauser Mobile</strong><span class="excerpt">Great tool for residents communication</span><em class="arrow-right"></em></span>
-						</a>
-					</div>
-				</div>
-			</div> -->
-			{% for portfolio in page.portfolios %}
-			<div class="box col-xs-6 col-sm-4 col-md-3">
-				<div class="thumb">
-					<div class="photo">
-						<a href="{{portfolio.url}}" target="_blank">
-							<img src="{{ site.url }}/assets/img/portfolio/{{portfolio.thumb}}" alt="" width="434" height="434">
-							<span class="info"><strong class="title">{{portfolio.title}}</strong><span class="excerpt">{{portfolio.description}}</span><em class="arrow-right"></em></span>
-						</a>
-					</div>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-	</div>
-
-	<div class="margin-5"></div>
-	<h4>Companies I worked with</h4>
+	<h6 class="heading"><span>Companies I worked with</span></h6>
 	<div class="owl-carousel owl-clients owl-round-arrows">
 		{% for company in page.companies %}
 		<div class="client-column">
@@ -127,10 +103,34 @@ companies:
 	</div>
 	<div class="margin-2"></div>
 
+	{% for portfolio in page.portfolios %}
+	<div class="margin-2"></div>
+	<h6 class="heading"><span>{{portfolio.type}}</span></h6>
+	<div class="inner">
+		<div class="row">
+			{% for project in portfolio.projects %}
+			<div class="box col-xs-6 col-sm-4 col-md-3">
+				<div class="thumb">
+					<div class="photo">
+						<a href="{{project.url}}" target="_blank">
+							<img src="{{ site.url }}/assets/img/portfolio/{{project.thumb}}" alt="" width="434" height="434">
+							<span class="info"><strong class="title">{{project.title}}</strong><span class="excerpt">{{project.description}}</span><em class="arrow-right"></em></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="margin-2"></div>
+	{% endfor %}
+
+	
+
 	<div class="margin-5"></div>
 	<div class="row">
 		<div class="col-sm-6">
-			<h4>What people say about me</h4>
+			<h5>What people say about me</h5>
 		</div>
 		<div class="col-sm-6">
 			<div class="red-border testimonials-vertical-offset">

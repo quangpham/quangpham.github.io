@@ -59,10 +59,10 @@ jQuery(".owl-carousel.owl-clients").owlCarousel({
 			items   : 2
 		},
 		768: {
-			items   : 3
+			items   : 4
 		},
 		992: {
-			items   : 4
+			items   : 5
 		}
 	}
 }).on('changed.owl.carousel', function(event) {
