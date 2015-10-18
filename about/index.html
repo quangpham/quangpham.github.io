@@ -3,6 +3,14 @@ layout: default
 title: About
 container_class: white-background
 resume_url: resume
+
+skills:
+- "Mobile: iOS native development (Objective-C/Swift), hybrid app development (Cordova, IonicFramework), Unity3D, Qt"
+- "Frontend: HTML, CSS, LESS, SASS, AngularJS, D3, Jquery, React, Animation, Lodash, Grunt, Bower"
+- "Backend: Ruby on Rails, Nodejs, Golang"
+- "CMS: Drupal, Joomla, Wordpress"
+- "DevOps: Docker, CoreOS, Vagrant, Chef, Scripting"
+- "Data sciences: Market intelligence research, data crawling/collecting, data visualization"
 ---
 
 <div class="container">
@@ -20,60 +28,15 @@ resume_url: resume
 			</div>
 		</div>
 
-<!-- 		<div class="margin-5"></div>
-		<h6 class="heading"><span>Headings</span></h6>
-		<div class="margin-3"></div>
-
-		<div class="row">
-			<div class="box col-xs-12 col-sm-4">
-				<div class="service-item">
-					<h6>Mobile development</h6>
-					<div class="sep red"></div>
-					<p>
-						- iOS native app development<br>
-						- Phonegap/Cordova app development<br>
-						- Mobile game development (with Unity3D)<br>
-						- Qt development
-					</p>
-				</div>
-			</div>
-			<div class="box col-xs-12 col-sm-4">
-				<div class="service-item">
-					<h6>Web development</h6>
-					<div class="sep red"></div>
-					<p>
-						- CMS development for Wordpress, Drupal and Joomla<br>
-						- Web apps development<br>
-						- E-commerce sites<br>
-						- Backend, API development
-					</p>
-				</div>
-			</div>
-			<div class="box col-xs-12 col-sm-4">
-				<div class="service-item">
-					<h6>Data science services</h6>
-					<div class="sep red"></div>
-					<p>
-						- Data crawling/collecting<br>
-						- Data visualization & analytics<br>
-						- Market intelligence research
-					</p>
-				</div>
-			</div>
-		</div> -->
-
 		<div class="margin-3"></div>
 		<h6 class="heading"><span>Good at</span></h6>
 		<p>
 			My major skills are in iOS native development and Ruby on Rails backend development. I am also good at AngularJS and NodeJS.
 		</p>
 		<ul>
-			<li>Mobile: Objective-C/Swift (iOS), Cordova/Phonegap (IonicFramework), Unity3D, Qt</li>
-			<li>Frontend: HTML, CSS, LESS, SASS, AngularJS, D3, Jquery, React, Animation, Lodash, Grunt, Bower</li>
-			<li>Backend: Ruby on Rails, Nodejs, Go</li>
-			<li>CMS: Drupal, Joomla, Wordpress</li>
-			<li>DevOps: Docker, CoreOS, Vagrant, Chef, Shell Scripting</li>
-			<li>Data sciences: data crawling/collecting and data visualization</li>
+			{% for skill in page.skills %}
+			<li>{{skill}}</li>
+			{% endfor %}
 		</ul>
 
 		<div class="margin-1"></div>
