@@ -3,8 +3,9 @@ title: Pham's website
 email: me@quangpham.com
 description: "My name is Quang Pham, a fullstack developer in Finland. This is my personal portfolio"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:4000/"
-#url: "http://quangpham.com/"
+#url: "http://localhost:4000/"
+url: "http://quangpham.com/"
+resume_url: about/quang_pham_resume.pdf
 github_username:  quangpham
 # Build settings
 markdown: kramdown

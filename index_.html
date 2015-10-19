@@ -1,0 +1,72 @@
+---
+layout: default
+title: Portfolio
+container_class: white-background
+
+services:
+- title: Mobile Apps Development
+  description: iOS native apps & cordova/phonegap apps
+  thumb: service_mobile.png
+  url: contact
+- title: Website Development
+  description: Ruby on Rails, NodeJs, Frontend, CMS (Drupal, Wordpress, Joomla)
+  thumb: service_website.png
+  url: contact
+
+profile_title: "Hi! I'm Pham, a fullstack developer in Helsinki"
+profile_description: "I'm passionate about making beautiful website and mobile apps. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here"
+profile_thumb: quang1.jpg
+contact_url: contact
+
+portfolios:
+- title: Hauser Mobile
+  description: Great tool for residents communication
+  thumb: s_hauser2.jpg
+  url: "https://itunes.apple.com/us/app/hauser-mobile/id992103031?mt=8"
+- title: Sayduck
+  description: Sayduck app is using 3D technology to help you buying furniture
+  thumb: s_sayduck.jpg
+  url: "https://itunes.apple.com/us/app/sayduck-make-your-space-beautiful/id626844409?mt=8"
+---
+
+<div class="container container-masonry">
+  <div class="inner">
+    <div class="row">
+     <div class="box col-sm-4 col-md-6">
+        <div class="thumb featured">
+          <div class="photo">
+            <a href="project.html">
+              <img src="{{site.url}}/assets/img/{{page.profile_thumb}}" alt="" width="715" height="715">
+              <span class="info"><strong class="title">{{page.profile_title}}</strong><span class="excerpt">{{page.profile_description}}</span><em class="arrow-right"></em></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      {% for service in page.services %}
+      <div class="box col-xs-6 col-sm-4 col-md-3">
+        <div class="thumb featured">
+          <div class="photo">
+            <a href="{{site.url}}{{service.url}}" target="_blank">
+              <img src="{{ site.url }}/assets/img/{{service.thumb}}" alt="" width="434" height="434">
+              <span class="info"><strong class="title">{{service.title}}</strong><span class="excerpt">{{service.description}}</span><em class="arrow-right"></em></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+      {% assign post = site.posts.first %}
+      <div class="box col-sm-6">
+        <div class="post-box horizontal clearfix">
+          <a href="{{post.url}}" class="image-link arrow-icon"><img src="{{site.url}}/assets/img/blog/cover/{{post.cover_image}}" width="434" height="434" alt=""></a>
+          <div class="extra-info">
+            <p class="meta small">BLOG: {{ post.date | date: "%b %-d" }}</p>
+            <h5><a href="{{post.url}}">{{ post.title }}</a></h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
