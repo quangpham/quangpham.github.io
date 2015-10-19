@@ -9,7 +9,7 @@ resume_pdf_url: about/quang_pham_resume.pdf
 github_username:  quangpham
 # Build settings
 markdown: kramdown
-paginate: 8
+paginate: 5
 paginate_path: "/blog/page:num/"
 nav_items:
 - title: Home
