@@ -10,13 +10,14 @@ schools:
   degree: Bachelor of Business Information Technology
 
 skills:
-- "Strong background in various programming languages: Objective-C, Swift, Go, Javascript, C++, C#, PHP, Ruby and Python"
-- Experienced in mobile development with iOS (Objective-C & Swift), Cordova/Phonegap (Ionicframework, Sencha), Unity (C#) and Qt (QML, C++)
+- Solid background in Objective-C, C++, C#, Ruby, Swift, Javascript, PHP
+- Experienced in iOS native development (Objective-C & Swift), hybrid app development (Cordova, IonicFramework, Sencha), Unity (C#) and Qt (QML, C++)
 - Experienced in backend development with Ruby on Rails, Nodejs and Go
-- Fluency in many web technologies such as HTML, CSS (LESS & SASS), Javascript (AngularJS, React, Jquery, Backbone), CMS (Drupal, Joomla, Wordpress)
-- "Familiar with DevOps and Cloud services: Amazon AWS, DigitalOcean, Docker"
+- Fluency in HTML, CSS, LESS, SASS, AngularJS, D3, Jquery, React, Animation, Lodash, Grunt, Bower, CMS (Drupal, Joomla, Wordpress)
+- "Familiar with DevOps and Cloud services: Amazon AWS, DigitalOcean, Docker, CoreOS, Vagrant, Chef, Scripting"
 - "Experienced in data sciences: data crawling/collecting and data visualization"
 - Knowledge in Agile Software Development, experienced in SCRUM.
+
 work_experiences:
 - time: "Apr 2013 - Aug 2014"
   position: Software Developer
@@ -36,8 +37,8 @@ work_experiences:
   tasks:
   - Developing websites (frontend and backend) using Drupal, Codelgniter, Express Engine, Joomla
   - Developing mobile website using with Drupal, Web Responsive Tech, HTML5
-  - Developing web apps and native apps for mobiles using Titanium and Sencha-Touch
-  - Integrating Google Map API into web application and mobile application
+  - R&D on mobile framework such as Titanium and Sencha-Touch
+  - Integrating 3rd party web services such Google Map API into web application and mobile application
 - time: "Jan 2010 - Mar 2012"
   position: Localization Tester
   company_name: Symbio
@@ -52,13 +53,6 @@ work_experiences:
 
 <div class="container">
 	<h3>Resume</h3>
-	<div class="margin-2"></div>
-	<h6 class="heading"><span>Education</span></h6>
-	<ul>
-		{% for school in page.schools %}
-		<li>{{school.name}}<br>{{school.degree}}</li>
-		{% endfor %}
-	</ul>
 
 	<div class="margin-2"></div>
 	<h6 class="heading"><span>Skills and Competences</span></h6>
@@ -82,13 +76,22 @@ work_experiences:
 		{% endfor %}
 	</ul>
 
+<!--
 	<div class="margin-2"></div>
 	<h6 class="heading"><span>Community Contribution</span></h6>
 	<ul>
 		<li>Team Coordinator for <a href="https://meego.transifex.net/projects/p/meego/team/vi/">Meego Localization Project</a> (Vietnamese language)</li>
 		<li>Member of <a href="http://joomlaviet.vn<">Vietnamese Localization Team</a> in Joomla Project</li>
 	</ul>
+-->
 
+	<div class="margin-2"></div>
+	<h6 class="heading"><span>Education</span></h6>
+	<ul>
+		{% for school in page.schools %}
+		<li>{{school.name}}<br>{{school.degree}}</li>
+		{% endfor %}
+	</ul>
 
 	<div class="margin-1"></div>
 	<h6 class="heading"><span>Trainings, Seminars & Professional Development</span></h6>
@@ -110,7 +113,7 @@ work_experiences:
 	<h6 class="heading"><span>Additional Information</span></h6>
 	<ul>
 		<li>Languages: English (proficient), Vietnamese (native), Finnish (basic)</li>
-		<li>Strong analytical capability, high level of self-motivation and independence</li>
-		<li>Fast self-study in new technology, good communication skills, teamwork spirit</li>
+		<li>High level of self-motivation and independence</li>
+		<li>Fast self-study new technology</li>
 	</ul>
 </div>
