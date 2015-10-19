@@ -61,7 +61,7 @@ disable_ortfolios:
 
 testimonials:
 - title: Mikko Riikkinen, Banking Consultant / Startupper
-  description: Quang is a true professional in agile development. He is not only great in coding but also he understands the business side of new service development. Furthermore, he is able to turn ideas to applications in a short period of time and continue developing based on the user feedback.
+  description: Quang is a true professional in agile development. He understands the business side of new service development and he is able to turn ideas into applications in a short period of time and cost-effective.
   linkedin_url: "https://www.linkedin.com/in/riikkinen"
 - title: Mikko Martikainen - CEO, Founder of Sayduck
   description: Quang has an excellent capacity to quickly learn new technologies, and he has always been very proactive in coming up with solutions to difficult problems
@@ -129,15 +129,13 @@ companies:
 	{% endfor %}
 
 	
-
-	<div class="margin-5"></div>
+  <div class="margin-5"></div>
+  <h6 class="heading"><span>What people say about me</span></h6>
+	
 	<div class="row">
-		<div class="col-sm-6">
-			<h5>What people say about me</h5>
-		</div>
-		<div class="col-sm-6">
-			<div class="red-border testimonials-vertical-offset">
-				<div class="owl-carousel owl-testimonials2 owl-red-dots">
+		<div class="col-sm-12">
+			<div class="testimonials-vertical-offset">
+				<div class="owl-carousel owl-testimonials2 owl-red-dots owl-round-arrows">
 					{% for testimonial in page.testimonials %}
 					<div class="testimonial-item">
 						<p>{{testimonial.description}}</p>

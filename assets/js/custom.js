@@ -19,10 +19,24 @@ jQuery(".owl-carousel.owl-services").owlCarousel({
 });
 
 jQuery(".owl-carousel.owl-testimonials2").owlCarousel({
-	items   : 1,
-	nav     : false,
-	navText : ['', ''],
-	dots    : true
+	items   : 2,
+	slideBy :2,
+	nav     : true,
+	navText : ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+	dots    : true,
+	loop    : true,
+	responsive : {
+		0: {
+			items   : 1,
+			slideBy :1,
+		},
+		768: {
+			items   : 2
+		},
+		992: {
+			items   : 2
+		}
+	}
 }).on('changed.owl.carousel', function(event) {
     window.sendDataToMongolab("website", {ext_url: "testimonials " + event.item.index.toString()} );
 });
