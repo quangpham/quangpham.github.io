@@ -5,7 +5,7 @@ description: "My name is Quang Pham, a fullstack developer in Finland. This is m
 baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "http://localhost:4000/"
 url: "http://quangpham.com/"
-resume_url: about/quang_pham_resume.pdf
+resume_pdf_url: about/quang_pham_resume.pdf
 github_username:  quangpham
 # Build settings
 markdown: kramdown
