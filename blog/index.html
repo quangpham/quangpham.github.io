@@ -14,7 +14,7 @@ title: Blog
 				<div class="thumb featured">
 					<div class="photo">
 						<a href="{{post.url}}">
-							<img src="{{site.url}}/assets/img/blog/cover/{{post.cover_image}}" alt="" width="715" height="715">
+							<img src="{{site.url}}/assets/img/blog/cover/{{post.blog_thumb_image}}" alt="" width="715" height="715">
 							<span class="info"><strong class="big-title">{{ post.title }}</strong><span class="excerpt">{{ post.date | date: "%b %-d, %Y" }}  {{ post.excerpt }}</span><em class="arrow-right"></em></span>
 						</a>
 					</div>
@@ -25,7 +25,7 @@ title: Blog
 			{% if forloop.index == 2 %}
 			<div class="box col-sm-5 col-md-3">
 				<div class="post-box vertical clearfix">
-					<a href="{{post.url}}" class="image-link arrow-icon"><img src="{{site.url}}/assets/img/blog/cover/{{post.cover_image}}" width="434" height="434" alt=""></a>
+					<a href="{{post.url}}" class="image-link arrow-icon"><img src="{{site.url}}/assets/img/blog/cover/{{post.blog_thumb_image}}" width="434" height="434" alt=""></a>
 					<div class="extra-info">
 						<p class="meta small">{{ post.date | date: "%b %-d, %Y" }}<p>
 						<h5><a href="{{post.url}}">{{ post.title }}</a></h5>
@@ -41,7 +41,7 @@ title: Blog
 						<p class="meta small">{{ post.date | date: "%b %-d, %Y" }}</p>
 						<h5><a href="{{post.url}}">{{ post.title }}</a></h5>
 					</div>
-					<a href="{{post.url}}" class="image-link arrow-icon dark-overlay"><img src="{{site.url}}/assets/img/blog/cover/{{post.cover_image}}" width="434" height="434" alt=""></a>
+					<a href="{{post.url}}" class="image-link arrow-icon dark-overlay"><img src="{{site.url}}/assets/img/blog/cover/{{post.blog_thumb_image}}" width="434" height="434" alt=""></a>
 				</div>
 			</div>
 			{% endif %}
@@ -51,7 +51,7 @@ title: Blog
 			{% if forloop.index == 4 or forloop.index == 5 %}
 			<div class="box col-sm-6">
 				<div class="post-box horizontal clearfix">
-					<a href="{{post.url}}" class="image-link arrow-icon"><img src="{{site.url}}/assets/img/blog/cover/{{post.cover_image}}" width="434" height="434" alt=""></a>
+					<a href="{{post.url}}" class="image-link arrow-icon"><img src="{{site.url}}/assets/img/blog/cover/{{post.blog_thumb_image}}" width="434" height="434" alt=""></a>
 					<div class="extra-info">
 						<p class="meta small">{{ post.date | date: "%b %-d, %Y" }}</p>
 						<h5><a href="{{post.url}}">{{ post.title }}</a></h5>

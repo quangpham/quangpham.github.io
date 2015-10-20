@@ -2,7 +2,7 @@
 layout: post
 title:  "Am I afraid of change?"
 date:   2013-04-25 11:14:31
-cover_image: change-ahead-16514629.jpg
+blog_thumb_image: change-ahead-16514629.jpg
 categories: blogs
 ---
 During the last 4 years, I have worked in 3 different companies. Every time I started working in the new company, I have to learn something totally new just like a newbie. It could a new programming language or a new framework. But am I afraid to change again? The answer is NO. And here are the reasons.

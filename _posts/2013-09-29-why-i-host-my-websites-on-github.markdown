@@ -2,7 +2,7 @@
 layout: post
 title:  "Why I host my website on Github"
 date:   2013-09-10 11:14:31
-cover_image: github-logo.png
+blog_thumb_image: github-logo.png
 categories: blogs
 ---
 http://phamquang.tumblr.com/post/98713232473

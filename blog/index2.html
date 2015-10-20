@@ -24,7 +24,7 @@ popular_posts:
 							<div class="thumb featured">
 								<div class="photo">
 									<a href="{{post.url}}">
-										<img src="{{site.url}}/assets/img/blog/cover/{{post.cover_image}}" alt="" width="715" height="715">
+										<img src="{{site.url}}/assets/img/blog/cover/{{post.blog_thumb_image}}" alt="" width="715" height="715">
 										<span class="info"><strong class="big-title">{{ post.title }}</strong><span class="excerpt">{{ post.excerpt }}</span><em class="arrow-right"></em></span>
 									</a>
 								</div>
@@ -40,7 +40,7 @@ popular_posts:
 						<div class="box col-sm-8">
 							<div class="post-box horizontal clearfix">
 						{% endif %}
-								<a href="{{post.url}}" class="image-link arrow-icon"><img src="{{site.url}}/assets/img/blog/cover/{{post.cover_image}}" width="434" height="434" alt=""></a>
+								<a href="{{post.url}}" class="image-link arrow-icon"><img src="{{site.url}}/assets/img/blog/cover/{{post.blog_thumb_image}}" width="434" height="434" alt=""></a>
 								<div class="extra-info">
 									<p class="meta small">{{ post.date | date: "%b %-d, %Y" }}</p>
 									<h5><a href="{{post.url}}">{{ post.title }}</a></h5>

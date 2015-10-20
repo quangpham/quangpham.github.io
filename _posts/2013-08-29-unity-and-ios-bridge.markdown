@@ -2,7 +2,7 @@
 layout: post
 title:  "Unity and native iOS bridge"
 date:   2013-08-29 11:14:31
-cover_image: unity.jpg
+blog_thumb_image: unity.jpg
 categories: blogs
 ---
 At Sayduck, we are using Unity to build our awesome mobile applications. There are 2 main reasons why we choose Unitypowerful 3D rendering engine and it supports cross-platform development.

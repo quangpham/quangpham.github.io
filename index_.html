@@ -58,7 +58,7 @@ portfolios:
       {% assign post = site.posts.first %}
       <div class="box col-sm-6">
         <div class="post-box horizontal clearfix">
-          <a href="{{post.url}}" class="image-link arrow-icon"><img src="{{site.url}}/assets/img/blog/cover/{{post.cover_image}}" width="434" height="434" alt=""></a>
+          <a href="{{post.url}}" class="image-link arrow-icon"><img src="{{site.url}}/assets/img/blog/cover/{{post.blog_thumb_image}}" width="434" height="434" alt=""></a>
           <div class="extra-info">
             <p class="meta small">BLOG: {{ post.date | date: "%b %-d" }}</p>
             <h5><a href="{{post.url}}">{{ post.title }}</a></h5>

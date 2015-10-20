@@ -2,7 +2,7 @@
 layout: post
 title:  "How much does it cost to create an app?"
 date:   2013-10-28 11:14:31
-cover_image: app-iphone.png
+blog_thumb_image: app-iphone.png
 categories: blogs
 ---
 This is properly the most popular question I usually got from my business-oriented friends. After giving my estimation, most of them, however, had a shocked impression because of the unexpected (high) quotation. That’s why I think it is good to write a blog to explain how I estimated and why creating an apps is costly. Hopefully, it could give some valuable information to my non-coder friends and the business people who need to make the decision or just want to understand the process of mobile development.
