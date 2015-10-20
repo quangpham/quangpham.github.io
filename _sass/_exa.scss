@@ -32,6 +32,9 @@ Table of contents:
 
 */
 
+$qp_grey: #ccd6dd;
+$qp_color_2: darken(#66757f, 30%);
+
 /* 1. Reset */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
@@ -71,7 +74,7 @@ body {
 	font-size: 87.52%;
 	line-height: 1.6875;
 	font-family: 'Droid Serif', sans-serif;
-	color: #66757f;
+	color: $qp_color_2;
 	overflow-x: hidden;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -179,7 +182,7 @@ h6 {
 
 h6.heading {
 	position: relative;
-	color: #ccd6dd;
+	color: darken($qp_grey, 50%);
 }
 
 h6.heading span {
@@ -202,14 +205,14 @@ h6.heading:after {
 	width: 100%;
 	height: 1px;
 	margin-top: -1px;
-	background-color: #ccd6dd\9\0;
-	background-image: -webkit-linear-gradient(left, #ccd6dd, rgba(245, 248, 250, 0));
-	background-image: linear-gradient(to right, #ccd6dd, rgba(245, 248, 250, 0));
+	background-color: $qp_grey;
+	background-image: -webkit-linear-gradient(left, $qp_grey, rgba(245, 248, 250, 0));
+	background-image: linear-gradient(to right, $qp_grey, rgba(245, 248, 250, 0));
 }
 
 .white-background h6.heading:after {
-	background-image: -webkit-linear-gradient(left, #ccd6dd, rgba(255, 255, 255, 0));
-	background-image: linear-gradient(to right, #ccd6dd, rgba(255, 255, 255, 0));
+	background-image: -webkit-linear-gradient(left, $qp_grey, rgba(255, 255, 255, 0));
+	background-image: linear-gradient(to right, $qp_grey, rgba(255, 255, 255, 0));
 }
 
 p,
@@ -711,7 +714,7 @@ select {
 	max-width: 100%;
 	padding: 1em;
 	margin: 0 0 1em;
-	border: 1px solid #ccd6dd;
+	border: 1px solid $qp_grey;
 	font-family: "Droid", Arial, sans-serif;
 	line-height: normal;
 	vertical-align: baseline;
@@ -842,7 +845,7 @@ input[type=button],
 	padding: 1em 2em;
 	line-height: normal;
 	margin: 0 0 1.2em;
-	border: 1px solid #ccd6dd;
+	border: 1px solid $qp_grey;
 	font-family: "Droid", Arial, sans-serif;
 	font-size: 1em;
 	font-weight: inherit;
@@ -965,18 +968,18 @@ input::-moz-focus-inner {
 
 ::-webkit-input-placeholder {
 	font-style: italic;
-	color: #ccd6dd;
+	color: $qp_grey;
 }
 
 ::-moz-placeholder {
 	font-style: italic;
-	color: #ccd6dd;
+	color: $qp_grey;
 }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
 	font-style: italic;
-	color: #ccd6dd;
+	color: $qp_grey;
 }
 
 /* 6. Table */
@@ -1046,7 +1049,7 @@ a {
 }
 
 a:focus {
-	outline: 2px solid #ccd6dd;
+	outline: 2px solid $qp_grey;
 	outline: 2px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -1184,14 +1187,14 @@ img.round {
 	width: 100%;
 	height: 100%;
 	padding: 20px;
-	color: #66757f;
+	color: $qp_color_2;
 	background-color: #fff;
 	background-color: rgba(255, 255, 255, 0.85);
 	opacity: 0;
 }
 
 .thumb.dark-overlay .info {
-	color: #ccd6dd;
+	color: $qp_grey;
 	background-color: #000;
 	background-color: rgba(0, 0, 0, 0.85);
 }
@@ -1381,7 +1384,7 @@ img.round {
 
 .post-box .extra-info .meta {
 	font-style: italic;
-	color: #ccd6dd;
+	color: $qp_grey;
 }
 
 .post-box .extra-info h5 {
@@ -1408,7 +1411,7 @@ img.round {
 
 .tab-container .tab_content {
 	padding: 1.75em 0;
-	border-top: 1px solid #ccd6dd;
+	border-top: 1px solid $qp_grey;
 }
 
 .tab-container .tab_content :last-child {
@@ -1759,7 +1762,7 @@ img.round {
 }
 
 .owl-red-dots .owl-dots .owl-dot span {
-	background-color: #ccd6dd;
+	background-color: $qp_grey;
 }
 
 .owl-red-dots .owl-dots .owl-dot.active span {
@@ -1989,7 +1992,7 @@ img.round {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: #070707;
-	color: #ccd6dd;
+	color: $qp_grey;
 }
 
 #hero .inner {
@@ -2147,7 +2150,7 @@ img.round {
 	display: block;
 	font-weight: 400;
 	font-style: italic;
-	color: #ccd6dd;
+	color: $qp_grey;
 }
 
 .tags strong.padding-bottom {
@@ -2159,7 +2162,7 @@ img.round {
 	display: inline-block;
 	margin: 5px 5px 5px 0;
 	padding: 2px 14px;
-	border: 1px solid #ccd6dd;
+	border: 1px solid $qp_grey;
 	border-radius: 2px;
 	font-size: 0.9em;
 	text-decoration: none;
@@ -2340,7 +2343,7 @@ img.round {
 }
 
 .testimonial-item em.name {
-	color: #ccd6dd;
+	color: darken($qp_grey, 50%);
 }
 
 /* 16. Sidebar widgets */
@@ -2383,7 +2386,7 @@ img.round {
 }
 
 .widget li a {
-	color: #66757f;
+	color: $qp_color_2;
 }
 
 .widget li a:hover,
@@ -2434,7 +2437,7 @@ img.round {
 	speak: none;
 	-webkit-font-smoothing: antialiased;
 	background-color: transparent;
-	color: #ccd6dd;
+	color: $qp_grey;
 	-webkit-transition: none;
 	transition: none;
 }
@@ -2456,14 +2459,14 @@ img.round {
 }
 
 .widget table th {
-	border-top-color: #ccd6dd;
-	border-bottom-color: #ccd6dd;
+	border-top-color: $qp_grey;
+	border-bottom-color: $qp_grey;
 	font-weight: 700;
 	text-align: center;
 }
 
 .widget table tfoot td {
-	border-top-color: #ccd6dd;
+	border-top-color: $qp_grey;
 }
 
 /* 17. Footer section */
@@ -3116,7 +3119,7 @@ img.round {
 		display: block;
 		margin-top: 0.75em;
 		font-style: italic;
-		color: #ccd6dd;
+		color: $qp_grey;
 	}
 
 	.team-member .team-photo:hover .info {
