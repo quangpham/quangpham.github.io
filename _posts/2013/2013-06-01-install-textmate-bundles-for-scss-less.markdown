@@ -7,7 +7,9 @@ categories: blogs
 ---
 I have started working with Rails for about a month or so, and Rails comes together with a lot of new cool stuffs, such as SCSS (Sassy CSS) or Less or CoffeeScript. But as I open a Rails project in TextMate, these files are not properly formatted, only the boring black and white colors. I have just found out that we can customize TextMate to use different bundles for different languages. These bundles will make the code looks better and sometimes they support even autocomplete. 
 
-![Textmate]({{ site.url }}/assets/img/blog/textmate.png)
+<p style="text-align: center;">
+	<img src="{{ site.url }}/assets/img/blog/textmate.png">
+</p>
 
 You just need to copy the *.tmbundle file into your TextMate support folder. In my case, I have my TextMate bundles located at:
 

@@ -5,10 +5,15 @@ date:   2013-06-11 11:14:31
 blog_thumb_image: parse.gif
 categories: blogs
 ---
-Parse.com helps app developers to speed up their project development time by providing a fast-setup and ready-to-use backend. The developers don't need to worry about backend development, server deployment, security issues. They can just leave the most painful in the backend development for Parse and only focus on their main business. I've tried using Parse since they released their beta version in early 2012. It is quite simple and easy to use frame work. I didn't spend too much time to get started with their library. In fact, it took me only almost 2 days to create an iOS apps with Parse integrated.
+Parse.com helps app developers to speed up their project development time by providing a fast-setup and ready-to-use backend. The developers don't need to worry about backend development, server deployment, security issues. They can just leave the most painful in the backend development for Parse and only focus on their main business. 
 
+I've tried using Parse since they released their beta version in early 2012. It is quite simple and easy to use frame work. I didn't spend too much time to get started with their library. In fact, it took me only almost 2 days to create an iOS apps with Parse integrated.
 
 It has been a while since I tried Parse in some of my projects and I really recommend the app developers tontry it out. Especially, it has gain better performance after being acquired by the giant Facebook. These are my thoughts about Parse as an app developer and hopefully they would be useful for you to choose your backend architecture.
+
+<p style="text-align: center;">
+	<img src="{{ site.url }}/assets/img/blog/parse.png">
+</p>
 
 ###### Ready-made data communication layers
 
@@ -40,4 +45,4 @@ Parse provides some “web-hook” methods incase of advanced data processing fe
 ###### Their SDK is well documented
 Documentation is very clean and clear. They also provide some useful tutorials and sample source codes. I didn’t find any problem when I got started using it.
 
-Overall, my first impression is good.
+Overall, my first impression is good. I would recommend Parse for other developers to give it a try.
