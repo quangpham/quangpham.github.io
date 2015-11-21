@@ -20,5 +20,7 @@ nav_items:
   url: /portfolio/
 - title: Blog
   url: /blog/
+- title: CV
+  url: /about/resume/
 - title: Contact
   url: /contact/
